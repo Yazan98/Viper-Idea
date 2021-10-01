@@ -24,6 +24,7 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
 
         connectedDevices.forEach {
             executeEvent(event, it)
+            notificationsManager.showNotification(ADB_TITLE, "ADB Event Executed for Device : ${it.name}")
         }
     }
 
@@ -33,6 +34,15 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
             AndroidDebugEvent.HIDE_LAYOUT_BOUNDS -> toggleLayoutBounds(false, device)
             AndroidDebugEvent.ENABLE_DONT_KEEP_ACTIVITIES -> toggleDontKeepActivities(true, device)
             AndroidDebugEvent.DISABLE_DONT_KEEP_ACTIVITIES -> toggleDontKeepActivities(false, device)
+            AndroidDebugEvent.SHOW_OVERDRAW_AREAS -> toggleOverdrawAreas(false, device)
+            AndroidDebugEvent.HIDE_OVERDRAW_AREAS -> toggleOverdrawAreas(false, device)
+        }
+    }
+
+    override fun toggleOverdrawAreas(isEnabled: Boolean, device: IDevice) {
+        when (isEnabled) {
+            true -> device.executeShellCommand("setprop debug.hwui.overdraw show", NullOutputReceiver())
+            false -> device.executeShellCommand("getprop debug.hwui.overdraw false", NullOutputReceiver())
         }
     }
 

@@ -13,4 +13,6 @@ interface AndroidDebugBridgeManagerImplementation {
 
     fun toggleDontKeepActivities(isEnabled: Boolean, device: IDevice)
 
+    fun toggleOverdrawAreas(isEnabled: Boolean, device: IDevice)
+
 }

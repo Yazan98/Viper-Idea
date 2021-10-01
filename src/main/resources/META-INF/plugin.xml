@@ -1,22 +1,55 @@
 <idea-plugin>
     <id>com.yazantarifi.Viper</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>Viper</name>
+    <vendor email="yazantarifi1@hotmail.com" url="http://www.yazantarifi.com">Viper</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
+    <description>
+        Code Generation and Command Line Shell Scripts for Debugging Tools to Enable all of them In Android Studio and
+        Common Used code in Android Apps Like Implementing Features in Android Studio
+    </description>
 
-    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-    </extensions>
-
     <actions>
-        <!-- Add your actions here -->
+        <group text="Debugging Tools"
+               id="Viper.ParentList"
+               description="ADB scripts To connected devices">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+
+            <group text="Debugging Tools"
+                   id="Viper.DebuggingTools"
+                   description="ADB scripts To connected devices">
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction" text="Show Layout Bounds"
+                        description="Enable developer options (show layout bounds) For connected devices" />
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction" text="Hide Layout Bounds"
+                        description="Hide layout bounds (ADB shell command) in connected devices" />
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction"
+                        text="Show Overdraw Areas (GPU Profiler)"
+                        description="ADB shell command To enable overdraw areas in connected devices"/>
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction" text="Hide Overdraw Areas"
+                        description="ADB shell command To hide overdraw In connected devices"/>
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction"
+                        text="Enable Don&#39;t Keep Activities Mode"
+                        description="ADB Shell Command To Enable Don&#39;t Keep Activities in Connected Devices"/>
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction"
+                        text="Disable Don&#39;t Keep Activities"
+                        description="Disable don't keep activities Via shell command in connected devices"/>
+                
+            </group>
+
+        </group>
+
     </actions>
 </idea-plugin>

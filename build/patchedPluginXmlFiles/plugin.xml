@@ -3,7 +3,7 @@
   <change-notes>
       Add change notes here.&lt;br&gt;
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
-  <idea-version since-build="202.8194" until-build="202.*"/>
+  <idea-version since-build="203.6682" until-build="203.*"/>
   <id>com.yazantarifi.Viper</id>
   <name>Viper</name>
   <vendor email="yazantarifi1@hotmail.com" url="http://www.yazantarifi.com">Viper</vendor>
@@ -13,15 +13,29 @@
     </description>
   <depends>com.intellij.modules.platform</depends>
   <actions>
-    <group text="Debugging Tools" id="Viper.ParentList" description="ADB scripts To connected devices">
+    <group text="Viper" id="ParentList" description="ADB scripts To connected devices" popup="true">
       <add-to-group group-id="MainMenu" anchor="last"/>
-      <group text="Debugging Tools" id="Viper.DebuggingTools" description="ADB scripts To connected devices">
-        <action id="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction" class="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction" text="Show Layout Bounds" description="Enable developer options (show layout bounds) For connected devices"/>
-        <action id="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction" class="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction" text="Hide Layout Bounds" description="Hide layout bounds (ADB shell command) in connected devices"/>
-        <action id="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction" class="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction" text="Show Overdraw Areas (GPU Profiler)" description="ADB shell command To enable overdraw areas in connected devices"/>
-        <action id="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction" class="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction" text="Hide Overdraw Areas" description="ADB shell command To hide overdraw In connected devices"/>
-        <action id="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction" class="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction" text="Enable Don't Keep Activities Mode" description="ADB Shell Command To Enable Don't Keep Activities in Connected Devices"/>
-        <action id="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction" class="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction" text="Disable Don't Keep Activities" description="Disable don't keep activities Via shell command in connected devices"/>
+      <group text="Code Generators" id="CodeGenerators" description="Common android used code pre generated" popup="true"/>
+      <group text="Debugging Tools" id="Viper.DebuggingTools" description="ADB scripts To connected devices" popup="true">
+        <add-to-group group-id="ParentList" anchor="first"/>
+        <action id="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction" class="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction" text="Show Layout Bounds" description="Enable developer options (show layout bounds) For connected devices">
+          <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+        </action>
+        <action id="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction" class="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction" text="Hide Layout Bounds" description="Hide layout bounds (ADB shell command) in connected devices">
+          <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+        </action>
+        <action id="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction" class="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction" text="Show Overdraw Areas (GPU Profiler)" description="ADB shell command To enable overdraw areas in connected devices">
+          <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+        </action>
+        <action id="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction" class="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction" text="Hide Overdraw Areas" description="ADB shell command To hide overdraw In connected devices">
+          <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+        </action>
+        <action id="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction" class="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction" text="Enable Don't Keep Activities Mode" description="ADB shell command To enable don't keep activities in connected devices">
+          <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+        </action>
+        <action id="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction" class="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction" text="Disable Don't Keep Activities" description="Disable don't keep activities Via shell command in connected devices">
+          <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+        </action>
       </group>
     </group>
   </actions>

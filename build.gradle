@@ -16,7 +16,7 @@ dependencies {
 }
 
 intellij {
-    version '2020.2.4'
+    version '2020.3.1'
     plugins 'android'
 }
 

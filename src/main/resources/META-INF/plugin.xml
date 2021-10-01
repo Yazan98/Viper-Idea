@@ -11,42 +11,65 @@
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <group text="Debugging Tools"
-               id="Viper.ParentList"
-               description="ADB scripts To connected devices">
+        <group text="Viper"
+               id="ParentList"
+               description="ADB scripts To connected devices"
+               popup="true">
             <add-to-group group-id="MainMenu" anchor="last"/>
+
+            <group text="Code Generators"
+                   id="CodeGenerators"
+                   description="Common android used code pre generated"
+                   popup="true">
+
+            </group>
 
             <group text="Debugging Tools"
                    id="Viper.DebuggingTools"
-                   description="ADB scripts To connected devices">
+                   description="ADB scripts To connected devices"
+                   popup="true">
+
+                <add-to-group group-id="ParentList" anchor="first"/>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction" text="Show Layout Bounds"
-                        description="Enable developer options (show layout bounds) For connected devices" />
+                        description="Enable developer options (show layout bounds) For connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction" text="Hide Layout Bounds"
-                        description="Hide layout bounds (ADB shell command) in connected devices" />
+                        description="Hide layout bounds (ADB shell command) in connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction"
                         text="Show Overdraw Areas (GPU Profiler)"
-                        description="ADB shell command To enable overdraw areas in connected devices"/>
+                        description="ADB shell command To enable overdraw areas in connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction" text="Hide Overdraw Areas"
-                        description="ADB shell command To hide overdraw In connected devices"/>
+                        description="ADB shell command To hide overdraw In connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction"
                         text="Enable Don&#39;t Keep Activities Mode"
-                        description="ADB Shell Command To Enable Don&#39;t Keep Activities in Connected Devices"/>
+                        description="ADB shell command To enable don't keep activities in connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction"
                         text="Disable Don&#39;t Keep Activities"
-                        description="Disable don't keep activities Via shell command in connected devices"/>
-                
+                        description="Disable don't keep activities Via shell command in connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
             </group>
 
         </group>

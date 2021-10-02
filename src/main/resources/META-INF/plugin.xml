@@ -15,12 +15,40 @@
                id="ParentList"
                description="ADB scripts To connected devices"
                popup="true">
+
             <add-to-group group-id="MainMenu" anchor="last"/>
 
             <group text="Code Generators"
                    id="CodeGenerators"
                    description="Common android used code pre generated"
                    popup="true">
+
+            </group>
+
+            <group text="Application"
+                    id="Applications"
+                    description="Application commands"
+                    popup="true">
+
+                <add-to-group group-id="ParentList" anchor="first"/>
+
+                <action id="com.yazantarifi.actions.application.DeleteApplicationAction"
+                        class="com.yazantarifi.actions.application.DeleteApplicationAction" text="Delete Application"
+                        description="Un install application From connected devices">
+                    <add-to-group group-id="Applications" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.application.ForceStopApplicationAction"
+                        class="com.yazantarifi.actions.application.ForceStopApplicationAction" text="Force Stop Application"
+                        description="Force stop application In connected devices">
+                    <add-to-group group-id="Applications" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.application.KillApplicationAction"
+                        class="com.yazantarifi.actions.application.KillApplicationAction" text="Kill Application"
+                        description="Kill application In connected devices">
+                    <add-to-group group-id="Applications" anchor="last"/>
+                </action>
 
             </group>
 

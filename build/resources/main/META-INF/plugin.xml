@@ -12,6 +12,7 @@
         Common Used code in Android Apps Like Implementing Features in Android Studio
     </description>
   <depends>com.intellij.modules.platform</depends>
+  <depends>org.jetbrains.android</depends>
   <actions>
     <group text="Viper" id="ParentList" description="ADB scripts To connected devices" popup="true">
       <add-to-group group-id="MainMenu" anchor="last"/>

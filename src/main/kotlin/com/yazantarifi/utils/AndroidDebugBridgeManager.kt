@@ -95,7 +95,7 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
 
     override fun unInstallApplication(device: IDevice) {
         getAvailablePackages().forEach {
-            device.uninstallPackage(it.name)
+            device.uninstallPackage(it.qualifiedName)
         }
     }
 

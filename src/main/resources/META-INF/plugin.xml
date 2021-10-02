@@ -9,6 +9,7 @@
     </description>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
 
     <actions>
         <group text="Viper"

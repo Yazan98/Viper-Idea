@@ -5095,3 +5095,940 @@ Max     duration: 118ms (it was 'Run action update (class com.intellij.execution
 2021-10-02 05:24:18,131 [  40868]   INFO - plication.impl.ApplicationImpl - Global instance threads created counter = 16; ProcessIOExecutorService threads: 6 
 2021-10-02 05:24:18,133 [  40870]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
 2021-10-02 05:24:18,134 [  40871]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2021-10-02 07:49:44,941 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2021-10-02 07:49:44,976 [     35]   INFO - .intellij.util.EnvironmentUtil - loading shell env: /bin/bash -l -i -c '/Applications/Android Studio.app/Contents/bin/printenv.py' '/var/folders/6c/mm_vb6kx0bl81sd61lq736zr0000gn/T/intellij-shell-env.3020449172020748424.tmp' 
+2021-10-02 07:49:45,009 [     68]   INFO -        #com.intellij.idea.Main - IDE: Android Studio (build #AI-203.7717.56.2031.7678000, 27 Aug 2021 00:53) 
+2021-10-02 07:49:45,018 [     77]   INFO -        #com.intellij.idea.Main - OS: Mac OS X (10.16, x86_64) 
+2021-10-02 07:49:45,037 [     96]   INFO -        #com.intellij.idea.Main - JRE: 11.0.9.1+11-b1145.63 (JetBrains s.r.o.) 
+2021-10-02 07:49:45,037 [     96]   INFO -        #com.intellij.idea.Main - JVM: 11.0.9.1+11-b1145.63 (OpenJDK 64-Bit Server VM) 
+2021-10-02 07:49:45,054 [    113]   INFO -        #com.intellij.idea.Main - JVM Args: -Dapple.awt.fileDialogForDirectories=true -Dapple.laf.useScreenMenuBar=true -Didea.auto.reload.plugins=true -Didea.classpath.index.enabled=false -Didea.config.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=AndroidStudio -Didea.plugins.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/plugins -Didea.required.plugins.id=com.yazantarifi.Viper -Didea.smooth.progress=false -Didea.system.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/system -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=JO -Duser.language=en -Duser.variant -ea 
+2021-10-02 07:49:45,055 [    114]   INFO -        #com.intellij.idea.Main - library path: /Users/opensooquser/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+2021-10-02 07:49:45,056 [    115]   INFO -        #com.intellij.idea.Main - boot library path: /Users/opensooquser/.gradle/caches/modules-2/files-2.1/com.jetbrains/jbre/jbr-11_0_9_1-osx-x64-b1145.63/jbr/Contents/Home/lib 
+2021-10-02 07:49:45,136 [    195]   INFO -        #com.intellij.idea.Main - locale=en_JO JNU=UTF-8 file.encoding=UTF-8
+  idea.config.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/config
+  idea.system.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/system
+  idea.plugins.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/plugins
+  idea.log.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/system/log 
+2021-10-02 07:49:45,644 [    703]   INFO - .intellij.util.EnvironmentUtil - shell environment loaded (15 vars) 
+2021-10-02 07:49:45,665 [    724]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 528 ms 
+2021-10-02 07:49:45,880 [    939]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 8; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@6f41d6d8[Running, parallelism = 7, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@12b9e48d 
+2021-10-02 07:49:46,033 [   1092]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=/Applications/Android Studio.app/Contents/plugins/Groovy, version=203.7717.56.2031.7678000) misses optional descriptor duplicates-groovy.xml 
+2021-10-02 07:49:46,033 [   1092]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=/Applications/Android Studio.app/Contents/plugins/Groovy, version=203.7717.56.2031.7678000) misses optional descriptor duplicates-detection-groovy.xml 
+2021-10-02 07:49:46,130 [   1189]   WARN - i.mac.MacOSApplicationProvider - No URL bundle (CFBundleURLTypes) is defined in the main bundle.
+To be able to open external links, specify protocols in the app layout section of the build file.
+Example: args.urlSchemes = ["your-protocol"] will handle following links: your-protocol://open?file=file&line=line 
+2021-10-02 07:49:46,224 [   1283]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=/Applications/Android Studio.app/Contents/plugins/java, version=203.7717.56.2031.7678000) misses optional descriptor profiler-java.xml 
+2021-10-02 07:49:46,227 [   1286]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=/Applications/Android Studio.app/Contents/plugins/java, version=203.7717.56.2031.7678000) misses optional descriptor java-features-trainer.xml 
+2021-10-02 07:49:46,279 [   1338]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Kotlin, id=org.jetbrains.kotlin, path=/Applications/Android Studio.app/Contents/plugins/Kotlin, version=203-1.5.20-release-289-AS7717.8) misses optional descriptor kotlin-nodejs.xml 
+2021-10-02 07:49:46,283 [   1342]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Kotlin, id=org.jetbrains.kotlin, path=/Applications/Android Studio.app/Contents/plugins/Kotlin, version=203-1.5.20-release-289-AS7717.8) misses optional descriptor native-debug.xml 
+2021-10-02 07:49:46,285 [   1344]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Kotlin, id=org.jetbrains.kotlin, path=/Applications/Android Studio.app/Contents/plugins/Kotlin, version=203-1.5.20-release-289-AS7717.8) misses optional descriptor js-debug.xml 
+2021-10-02 07:49:46,393 [   1452]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (203.7717.56), Layoutlib (203.7717.56.2031.7678000), Layoutlib Legacy (203.7717.56.2031.7678000), Google Login (203.7717.56.2031.7678000), CIDR Base (203.7717.56.2031.7678000), C/C++ Language Support (203.7717.56.2031.7678000), Clangd support (203.7717.56.2031.7678000), com.intellij.platform.images (203.7717.56.2031.7678000), JetBrains maven model api classes (203.7717.56.2031.7678000), JetBrains Repository Search (203.7717.56.2031.7678000), Subversion (203.7717.56.2031.7678000), Smali Support (203.7717.56.2031.7678000), Machine Learning Code Completion (203.7717.56.2031.7678000), Configuration Script (203.7717.56.2031.7678000), Copyright (203.7717.56.2031.7678000), Java (203.7717.56.2031.7678000), JUnit (203.7717.56.2031.7678000), Java IDE Customization (203.7717.56.2031.7678000), Java Stream Debugger (203.7717.56.2031.7678000), Java Bytecode Decompiler (203.7717.56.2031.7678000), Properties (203.7717.56.2031.7678000), Gradle (203.7717.56.2031.7678000), Java Internationalization (203.7717.56.2031.7678000), Resource Bundle Editor (203.7717.56.2031.7678000), Task Management (203.7717.56.2031.7678000), Mercurial (203.7717.56.2031.7678000), WebP Support (203.7717.56.2031.7678000), EditorConfig (203.7717.56.2031.7678000), Terminal (203.7717.56.2031.7678000), Git (203.7717.56.2031.7678000), ChangeReminder (203.7717.56.2031.7678000), GitHub (203.7717.56.2031.7678000), Next File Prediction (203.7717.56.2031.7678000), Shell Script (203.7717.56.2031.7678000), TextMate Bundles (203.7717.56.2031.7678000), YAML (203.7717.56.2031.7678000), Settings Repository (203.7717.56.2031.7678000), IntelliLang (203.7717.56.2031.7678000), TestNG (203.7717.56.2031.7678000), Code Coverage for Java (203.7717.56.2031.7678000), Groovy (203.7717.56.2031.7678000), Gradle-Java (203.7717.56.2031.7678000), Google Cloud Tools Core (203.7717.56.2031.7678000), Kotlin (203-1.5.20-release-289-AS7717.8), Android (2020.3.1 Patch 2), Google Cloud Tools For Android Studio (203.7717.56.2031.7678000), Firebase Testing (203.7717.56.2031.7678000), Compose (203.7717.56.2031.7678000), Android NDK Support (203.7717.56.2031.7678000), Android APK Support (203.7717.56.2031.7678000), Google Developers Samples (203.7717.56.2031.7678000), Test Recorder (203.7717.56.2031.7678000), Firebase Services (203.7717.56.2031.7678000), App Links Assistant (203.7717.56.2031.7678000), Firebase App Indexing (203.7717.56.2031.7678000) 
+2021-10-02 07:49:46,393 [   1452]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Viper (1.0-SNAPSHOT) 
+2021-10-02 07:49:47,091 [   2150]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=492; buffer=10; max=492 
+2021-10-02 07:49:47,103 [   2162]   INFO - tellij.util.io.FileChannelUtil - uninterruptible FileChannels will be used for indexes 
+2021-10-02 07:49:47,169 [   2228]   INFO - m.intellij.ui.mac.touchbar.NST - touchbar-server isn't running, skip nst loading 
+2021-10-02 07:49:47,187 [   2246]   INFO - tellij.util.io.storage.Storage - Space waste in /Users/opensooquser/Downloads/Viper/build/idea-sandbox/system/caches/attrib.dat is 4209791 bytes. Compacting now. 
+2021-10-02 07:49:47,187 [   2246]   INFO - tellij.util.io.storage.Storage - Compact failed: /Users/opensooquser/Downloads/Viper/build/idea-sandbox/system/caches/attrib.dat.storageData.backup 
+2021-10-02 07:49:47,187 [   2246]   INFO - tellij.util.io.storage.Storage - Done compacting in 0msec. 
+2021-10-02 07:49:47,229 [   2288]   INFO - cation.options.RegistryManager - Registry values changed by user: external.system.auto.import.disabled = true 
+2021-10-02 07:49:47,257 [   2316]   INFO - intellij.diagnostic.JitWatcher - JIT compilation state checking enabled 
+2021-10-02 07:49:47,271 [   2330]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2021-10-02 07:49:47,343 [   2402]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2021-10-02 07:49:47,350 [   2409]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63344 
+2021-10-02 07:49:47,419 [   2478]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2021-10-02 07:49:47,484 [   2543]   WARN - Container.ComponentManagerImpl - Do not use constructor injection (requestorClass=com.android.tools.idea.AndroidInitialConfigurator) 
+2021-10-02 07:49:47,633 [   2692]   INFO - pi.util.registry.RegistryValue - Registry value 'external.system.auto.import.disabled' has changed to 'true' 
+2021-10-02 07:49:47,689 [   2748]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /Applications/Android Studio.app/Contents/bin/fsnotifier 
+2021-10-02 07:49:47,694 [   2753]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2021-10-02 07:49:48,710 [   3769]   INFO - leBasedIndexDataInitialization - Initialization done: 1365 
+2021-10-02 07:49:48,829 [   3888]   INFO - exImpl$StubIndexInitialization - Initialization done: 117 
+2021-10-02 07:49:49,145 [   4204]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.p9.show.roots.in.file.chooser, wsl.execute.with.wsl.exe, inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, search.everywhere.mixed.results, copy.reference.popup, i18n.match.actions, editor.reader.mode, edit.run.configurations.while.dumb, new.large.text.file.viewer, property.value.inplace.editing, terminal.shell.command.handling 
+2021-10-02 07:49:49,201 [   4260]   WARN - nSystem.impl.ActionManagerImpl - keymap "Xcode" not found [Plugin: com.intellij] 
+2021-10-02 07:49:49,208 [   4267]   WARN - nSystem.impl.ActionManagerImpl - keymap "Xcode" not found [Plugin: com.intellij.cidr.base] 
+2021-10-02 07:49:49,322 [   4381]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Delete Application (Un install application From connected devices) 
+java.lang.Throwable: Cannot add an action twice: Delete Application (Un install application From connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,326 [   4385]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,329 [   4388]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,330 [   4389]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,332 [   4391]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,332 [   4391]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Force Stop Application (Force stop application In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Force Stop Application (Force stop application In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,333 [   4392]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,333 [   4392]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,333 [   4392]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,334 [   4393]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,334 [   4393]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Kill Application (Kill application In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Kill Application (Kill application In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,335 [   4394]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,335 [   4394]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,335 [   4394]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,335 [   4394]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,336 [   4395]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Application (Application commands) 
+java.lang.Throwable: Cannot add an action twice: Application (Application commands)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:891)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,336 [   4395]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,337 [   4396]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,337 [   4396]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,337 [   4396]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,337 [   4396]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Layout Bounds (Enable developer options (show layout bounds) For connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Layout Bounds (Enable developer options (show layout bounds) For connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,338 [   4397]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,338 [   4397]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,338 [   4397]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,339 [   4398]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,339 [   4398]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Layout Bounds (Hide layout bounds (ADB shell command) in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Layout Bounds (Hide layout bounds (ADB shell command) in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,340 [   4399]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,340 [   4399]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,340 [   4399]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,341 [   4400]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,341 [   4400]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Overdraw Areas (GPU Profiler) (ADB shell command To enable overdraw areas in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Overdraw Areas (GPU Profiler) (ADB shell command To enable overdraw areas in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,342 [   4401]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,342 [   4401]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,342 [   4401]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,342 [   4401]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,342 [   4401]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Overdraw Areas (ADB shell command To hide overdraw In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Overdraw Areas (ADB shell command To hide overdraw In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,343 [   4402]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,343 [   4402]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,343 [   4402]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,344 [   4403]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,344 [   4403]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Enable Don't Keep Activities Mode (ADB shell command To enable don't keep activities in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Enable Don't Keep Activities Mode (ADB shell command To enable don't keep activities in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,346 [   4405]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,346 [   4405]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,346 [   4405]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,347 [   4406]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,348 [   4407]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Disable Don't Keep Activities (Disable don't keep activities Via shell command in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Disable Don't Keep Activities (Disable don't keep activities Via shell command in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,348 [   4407]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,349 [   4408]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,349 [   4408]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,349 [   4408]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,349 [   4408]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Taps (Touches) (Show taps In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Taps (Touches) (Show taps In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,350 [   4409]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,351 [   4410]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,351 [   4410]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,351 [   4410]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,351 [   4410]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Taps (Touches) (Hide taps in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Taps (Touches) (Hide taps in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,352 [   4411]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,352 [   4411]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,352 [   4411]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,353 [   4412]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,353 [   4412]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Pointer Location (Show pointer location in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Pointer Location (Show pointer location in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,354 [   4413]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,354 [   4413]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,354 [   4413]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,355 [   4414]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,355 [   4414]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Pointer Location (Hide pointer location in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Pointer Location (Hide pointer location in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,356 [   4415]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,356 [   4415]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,356 [   4415]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,357 [   4416]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,357 [   4416]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Debugging Tools (ADB scripts To connected devices) 
+java.lang.Throwable: Cannot add an action twice: Debugging Tools (ADB scripts To connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:891)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.access$createAndInitialize(ServiceComponentAdapter.kt:13)
+	at com.intellij.serviceContainer.ServiceComponentAdapter$doCreateInstance$1.run(ServiceComponentAdapter.kt:43)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeNonCancelableSection(CoreProgressManager.java:218)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:42)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.actionSystem.impl.ActionPreloader.preload(ActionPreloader.java:15)
+	at com.intellij.openapi.application.Preloader.lambda$preload$0(Preloader.java:84)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:178)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:658)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:610)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:65)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:165)
+	at com.intellij.openapi.application.Preloader.lambda$preload$1(Preloader.java:74)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.doRun(BoundedTaskExecutor.java:216)
+	at com.intellij.util.concurrency.BoundedTaskExecutor.access$200(BoundedTaskExecutor.java:27)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.execute(BoundedTaskExecutor.java:195)
+	at com.intellij.util.ConcurrencyUtil.runUnderThreadName(ConcurrencyUtil.java:208)
+	at com.intellij.util.concurrency.BoundedTaskExecutor$1.run(BoundedTaskExecutor.java:184)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-02 07:49:49,357 [   4416]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-02 07:49:49,357 [   4416]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-02 07:49:49,360 [   4419]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-02 07:49:49,360 [   4419]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-02 07:49:49,480 [   4539]   INFO - verflags.ServerFlagInitializer - Enabled server flags:  
+2021-10-02 07:49:50,206 [   5265]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-10-02 07:49:50,208 [   5267]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-10-02 07:49:50,239 [   5298]   INFO - eStyle.CommonCodeStyleSettings - Loaded XML common code style settings 
+2021-10-02 07:49:50,240 [   5299]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-10-02 07:49:50,240 [   5299]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-10-02 07:49:50,969 [   6028]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/addons_list-4.xml 
+2021-10-02 07:49:51,493 [   6552]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/repository2-1.xml 
+2021-10-02 07:49:51,494 [   6553]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android/sys-img2-2.xml 
+2021-10-02 07:49:51,494 [   6553]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-automotive/sys-img2-2.xml 
+2021-10-02 07:49:51,493 [   6552]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/repository2-2.xml 
+2021-10-02 07:49:51,494 [   6553]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-wear/sys-img2-2.xml 
+2021-10-02 07:49:51,495 [   6554]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-wear-cn/sys-img2-2.xml 
+2021-10-02 07:49:51,495 [   6554]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-tv/sys-img2-2.xml 
+2021-10-02 07:49:51,495 [   6554]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google-tv/sys-img2-2.xml 
+2021-10-02 07:49:51,496 [   6555]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google_apis_playstore/sys-img2-2.xml 
+2021-10-02 07:49:51,497 [   6556]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/addon2-2.xml 
+2021-10-02 07:49:51,497 [   6556]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google_apis/sys-img2-2.xml 
+2021-10-02 07:49:51,497 [   6556]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/glass/addon2-2.xml 
+2021-10-02 07:49:51,498 [   6557]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/extras/intel/addon2-2.xml 
+2021-10-02 07:49:54,401 [   9460]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2021-10-02 07:49:57,331 [  12390]   INFO - rd.FirstRunWizardFrameProvider - Overriding welcome frame to be resizable 
+2021-10-02 07:49:58,932 [  13991]   INFO - BridgeProjectLifecycleListener - Using workspace model to open project 
+2021-10-02 07:49:59,022 [  14081]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2021-10-02 07:49:59,094 [  14153]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [<Project>] 
+2021-10-02 07:49:59,400 [  14459]   WARN - tartup.impl.StartupManagerImpl - Activities registered via registerPostStartupActivity must be dumb-aware: com.android.tools.idea.stats.AndroidStudioUsageTracker$ProjectLifecycleTracker$projectComponentsInitialized$1@7d1ed927 
+2021-10-02 07:49:59,400 [  14459]   INFO - on.JpsProjectModelSynchronizer - Workspace model loaded without cache. Loading real project state into workspace model. Thread[ApplicationImpl pooled thread 6,4,Idea Thread Group] 
+2021-10-02 07:50:00,786 [  15845]   INFO - ectsystem.ProjectSystemService - GradleProjectSystem project system has been detected 
+2021-10-02 07:50:01,336 [  16395]   INFO - artup.AndroidStudioInitializer - Failed to disable 'org.intellij.plugins.intelliLang.inject.groovy.GrConcatenationInjector' 
+2021-10-02 07:50:01,980 [  17039]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2021-10-02 07:50:01,997 [  17056]   INFO -  #git4idea.commands.GitHandler - git version 2.27.0 
+2021-10-02 07:50:02,011 [  17070]   INFO - ea.config.GitExecutableManager - Git version for /usr/local/bin/git: 2.27.0.0 (UNIX) 
+2021-10-02 07:50:02,035 [  17094]   INFO - pl.projectlevelman.NewMappings - Mapped Roots: 1 
+2021-10-02 07:50:02,631 [  17690]   INFO - roid.tools.idea.adb.AdbService - Initializing adb using: /Users/opensooquser/Library/Android/sdk/platform-tools/adb 
+2021-10-02 07:50:02,694 [  17753]   INFO -            #com.android.ddmlib - Connected to adb for device monitoring 
+2021-10-02 07:50:02,886 [  17945]   INFO - roid.tools.idea.adb.AdbService - Successfully connected to adb 
+2021-10-02 07:50:03,183 [  18242]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 1213 millis (read time: 1207) 
+2021-10-02 07:50:03,224 [  18283]   INFO - ngd.lsp.ClangDaemonContextImpl - Using clangd from: /Applications/Android Studio.app/Contents/plugins/c-plugin/bin/clang/mac/clangd 
+2021-10-02 07:50:03,259 [  18318]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@ba96011 
+2021-10-02 07:50:03,601 [  18660]   INFO - t.datamodel.TutorialBundleData - Found unhandled xml 
+2021-10-02 07:50:03,626 [  18685]   INFO - ProjectRootPostStartUpActivity - /Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt/.idea case-sensitivity: expected=false actual=false 
+2021-10-02 07:50:03,639 [  18698]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2021-10-02 07:50:03,691 [  18750]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 1928ms; general responsiveness: ok; EDT responsiveness: 1/2 sluggish 
+2021-10-02 07:50:03,695 [  18754]   INFO - .imports.GMavenIndexRepository - HTTP not modified since the last request for URL: https://dl.google.com/android/studio/gmaven/index/release/v0.1/classes-v0.1.json.gz (etag: "aca5cc"). 
+2021-10-02 07:50:03,695 [  18754]   INFO - .imports.GMavenIndexRepository - Kept the old disk cache with an old ETag header: "aca5cc". 
+2021-10-02 07:50:03,736 [  18795]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 4845 ms 
+2021-10-02 07:50:03,957 [  19016]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 606ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-10-02 07:50:04,762 [  19821]   INFO - dle.roots.GradleBuildRootIndex - /Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt: null -> org.jetbrains.kotlin.idea.scripting.gradle.roots.Imported@73311b69 
+2021-10-02 07:50:04,785 [  19844]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] script definitions aren't loaded yet. They should be loaded by invoking GradleScriptDefinitionsContributor.reloadIfNeeded from KotlinDslSyncListener: workingDir=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt gradleHome=/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1 
+2021-10-02 07:50:07,730 [  22789]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 3772ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-10-02 07:50:07,747 [  22806]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 0 files to index 
+2021-10-02 07:50:07,750 [  22809]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.jetbrains.cidr.lang.symbols.symtable.OCSymbolTablesBuildingActivity$1@7916b63b 
+2021-10-02 07:50:07,767 [  22826]   INFO -       #com.jetbrains.cidr.lang - Clearing symbols finished in 8 ms 
+2021-10-02 07:50:07,785 [  22844]   INFO -       #com.jetbrains.cidr.lang - Loading Header Maps finished in 18 ms 
+2021-10-02 07:50:07,801 [  22860]   INFO -       #com.jetbrains.cidr.lang - Loading Headers Search Roots finished in 6 ms 
+2021-10-02 07:50:07,874 [  22933]   INFO - .jetbrains.cidr.lang.modulemap - Loaded 0 module maps in 0 packs for 0 search roots 
+2021-10-02 07:50:07,875 [  22934]   INFO -       #com.jetbrains.cidr.lang - Loading Module Maps finished in 73 ms 
+2021-10-02 07:50:08,178 [  23237]   INFO -       #com.jetbrains.cidr.lang - Loaded 0 tables for 0 files (0 project files) 
+2021-10-02 07:50:08,178 [  23237]   INFO -       #com.jetbrains.cidr.lang - Loading symbols finished in 302 ms 
+2021-10-02 07:50:08,199 [  23258]   INFO - .jetbrains.cidr.lang.modulemap - Building module maps for 0 (root, configuration) pairs 
+2021-10-02 07:50:08,209 [  23268]   INFO -       #com.jetbrains.cidr.lang - Building module maps finished in 1 ms 
+2021-10-02 07:50:08,210 [  23269]   INFO -       #com.jetbrains.cidr.lang - Processing module maps finished in 0 ms 
+2021-10-02 07:50:08,213 [  23272]   INFO -       #com.jetbrains.cidr.lang - Saved 0 module maps in 0 packs 
+2021-10-02 07:50:08,225 [  23284]   INFO -       #com.jetbrains.cidr.lang - Saving Module Maps finished in 13 ms 
+2021-10-02 07:50:08,229 [  23288]   INFO -       #com.jetbrains.cidr.lang - Building symbols for 0 source files 
+2021-10-02 07:50:08,258 [  23317]   INFO -       #com.jetbrains.cidr.lang - Updating symbols finished in 18 ms 
+2021-10-02 07:50:08,261 [  23320]   INFO -       #com.jetbrains.cidr.lang - Building symbols for 0 unused headers 
+2021-10-02 07:50:08,269 [  23328]   INFO -       #com.jetbrains.cidr.lang - Updating symbols finished in 8 ms 
+2021-10-02 07:50:08,269 [  23328]   INFO -       #com.jetbrains.cidr.lang - Updating symbols finished in 8 ms 
+2021-10-02 07:50:08,271 [  23330]   INFO -       #com.jetbrains.cidr.lang - Building symbols in FAST mode, 0 source files from total 0 project files 
+2021-10-02 07:50:08,277 [  23336]   INFO -       #com.jetbrains.cidr.lang - Saving modified symbols for 0 files (0 tables of total 0) 
+2021-10-02 07:50:08,280 [  23339]   INFO -       #com.jetbrains.cidr.lang - Saving symbols finished in 8 ms 
+2021-10-02 07:50:08,287 [  23346]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@28012357 
+2021-10-02 07:50:08,326 [  23385]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@281e3435 
+2021-10-02 07:50:08,357 [  23416]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-10-02 07:50:08,373 [  23432]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=Shake Reporter, containerState=COMPONENT_CREATED, componentStore=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt) 
+2021-10-02 07:50:08,745 [  23804]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /Users/opensooquser/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home 
+2021-10-02 07:50:08,765 [  23824]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinInitScript] using classpath: /Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-api-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-tooling-models-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/kotlin-compiler-embeddable-1.3.72-patched-for-gradle-6.7.1.jar 
+2021-10-02 07:50:08,782 [  23841]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@7afcf9dc 
+2021-10-02 07:50:08,896 [  23955]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /Users/opensooquser/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home 
+2021-10-02 07:50:08,899 [  23958]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinSettingsScript] using classpath: /Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-api-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-tooling-models-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/kotlin-compiler-embeddable-1.3.72-patched-for-gradle-6.7.1.jar 
+2021-10-02 07:50:08,931 [  23990]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /Users/opensooquser/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home 
+2021-10-02 07:50:08,933 [  23992]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinBuildScript] using classpath: /Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-api-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-tooling-models-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/kotlin-compiler-embeddable-1.3.72-patched-for-gradle-6.7.1.jar 
+2021-10-02 07:50:08,983 [  24042]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-10-02 07:50:08,985 [  24044]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=Shake Reporter, containerState=COMPONENT_CREATED, componentStore=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt) 
+2021-10-02 07:50:09,030 [  24089]   INFO - testKnownPluginVersionProvider - 'gradle' plugin missing from the offline Maven repo, will use default 7.0.2 
+2021-10-02 07:50:09,033 [  24092]   INFO - testKnownPluginVersionProvider - 'gradle' plugin missing from the offline Maven repo, will use default 7.0.2 
+2021-10-02 07:50:09,033 [  24092]   INFO - idGradleProjectStartupActivity - Up-to-date models found in the cache. Not invoking Gradle sync. 
+2021-10-02 07:50:09,073 [  24132]   INFO - testKnownPluginVersionProvider - 'gradle' plugin missing from the offline Maven repo, will use default 7.0.2 
+2021-10-02 07:50:09,507 [  24566]   INFO - ativeWorkspaceModificationTask - NDK support for project 'Shake Reporter' is disabled because the project doesn't contain any valid native configurations. 
+2021-10-02 07:50:09,626 [  24685]   INFO - CompilerWorkspaceConfiguration - Available processors: 8 
+2021-10-02 07:50:09,769 [  24828]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.openapi.roots.impl.PushedFilePropertiesUpdaterImpl$3@6e4e712f 
+2021-10-02 07:50:09,782 [  24841]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-10-02 07:50:09,782 [  24841]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=Shake Reporter, containerState=COMPONENT_CREATED, componentStore=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt) 

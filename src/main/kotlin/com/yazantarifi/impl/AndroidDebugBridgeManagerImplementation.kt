@@ -16,6 +16,10 @@ interface AndroidDebugBridgeManagerImplementation {
 
     fun toggleOverdrawAreas(isEnabled: Boolean, device: IDevice)
 
+    fun toggleShowTapsOption(isEnabled: Boolean, device: IDevice)
+
+    fun togglePointerLocation(isEnabled: Boolean, device: IDevice)
+
     fun unInstallApplication(device: IDevice)
 
     fun clearDataAndRestartApplication(device: IDevice)

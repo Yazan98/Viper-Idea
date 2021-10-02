@@ -98,9 +98,33 @@
                     <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
                 </action>
 
+                <action id="com.yazantarifi.actions.adb.AndroidDebugShowTapsAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugShowTapsAction" text="Show Taps (Touches)"
+                        description="Show taps In connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugHideTapsAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugHideTapsAction" text="Hide Taps (Touches)"
+                        description="Hide taps in connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugShowPointerLocationAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugShowPointerLocationAction" text="Show Pointer Location"
+                        description="Show pointer location in connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
+
+                <action id="com.yazantarifi.actions.adb.AndroidDebugHidePointerLocationAction"
+                        class="com.yazantarifi.actions.adb.AndroidDebugHidePointerLocationAction" text="Hide Pointer Location"
+                        description="Hide pointer location in connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
             </group>
 
         </group>
-
     </actions>
 </idea-plugin>

@@ -58,7 +58,25 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
             AndroidDebugEvent.CLEAR_DATA_APPLICATION -> clearDataApplication(device)
             AndroidDebugEvent.REMOVE_APPLICATION_PERMISSIONS -> removeApplicationPermissions(device)
             AndroidDebugEvent.KILL_APPLICATION_ACTION -> killApplication(device)
-            AndroidDebugEvent.FOURCE_STOP_APPLICATION -> forceStopApplication(device)
+            AndroidDebugEvent.FORCE_STOP_APPLICATION -> forceStopApplication(device)
+            AndroidDebugEvent.SHOW_TAPS_OPTION -> toggleShowTapsOption(true, device)
+            AndroidDebugEvent.HIDE_TAPS_OPTION -> toggleShowTapsOption(false, device)
+            AndroidDebugEvent.SHOW_POINTER_LOCATION -> togglePointerLocation(true, device)
+            AndroidDebugEvent.HIDE_POINTER_LOCATION -> togglePointerLocation(false, device)
+        }
+    }
+
+    override fun togglePointerLocation(isEnabled: Boolean, device: IDevice) {
+        when (isEnabled) {
+            true -> device.executeShellCommand("settings put system pointer_location 1", NullOutputReceiver())
+            false -> device.executeShellCommand("settings put system pointer_location 0", NullOutputReceiver())
+        }
+    }
+
+    override fun toggleShowTapsOption(isEnabled: Boolean, device: IDevice) {
+        when (isEnabled) {
+            true -> device.executeShellCommand("content insert --uri content://settings/system --bind name:s:show_touches --bind value:i:1", NullOutputReceiver())
+            false -> device.executeShellCommand("content insert --uri content://settings/system --bind name:s:show_touches --bind value:i:0", NullOutputReceiver())
         }
     }
 

@@ -124,8 +124,29 @@
                     <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
                 </action>
 
+
+                <action id="com.yazantarifi.actions.application.ClearDataApplicationAction"
+                        class="com.yazantarifi.actions.application.ClearDataApplicationAction" text="Clear Application Data"
+                        description="Clear application data for available package name">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.application.RemovePermissionsAction"
+                        class="com.yazantarifi.actions.application.RemovePermissionsAction" text="Remove All Permissions"
+                        description="Remove all permissions By revok The granted permissions">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.application.ClearDataAndRestartAction"
+                        class="com.yazantarifi.actions.application.ClearDataAndRestartAction"
+                        text="Clear Application Data and Restart"
+                        description="Clear application data By available package name and restart The application on connected devices">
+                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                </action>
+
             </group>
 
         </group>
+
     </actions>
 </idea-plugin>

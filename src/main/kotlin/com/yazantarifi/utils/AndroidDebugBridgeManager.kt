@@ -99,15 +99,26 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
     }
 
     override fun clearDataAndRestartApplication(device: IDevice) {
-
+        try {
+            val packageName = ApplicationUtils.getPackageName(project)
+            clearDataApplication(device)
+            device.executeShellCommand("monkey -p $packageName -c android.intent.category.LAUNCHER 1", NullOutputReceiver())
+        } catch (ex: Exception) {
+            notificationsManager.showNotification(ADB_TITLE, "Failed to clear Application Data With Restart Application")
+        }
     }
 
     override fun clearDataApplication(device: IDevice) {
-
+        val packageName = ApplicationUtils.getPackageName(project)
+        try {
+            device.executeShellCommand("pm clear $packageName", NullOutputReceiver())
+        } catch (ex: Exception) {
+            notificationsManager.showNotification(ADB_TITLE, "Failed to clear Application Data With Package Name : $packageName")
+        }
     }
 
     override fun removeApplicationPermissions(device: IDevice) {
-
+        device.executeShellCommand("pm reset-permissions", NullOutputReceiver())
     }
 
     override fun getAvailablePackages(): HashSet<PsiPackage> {

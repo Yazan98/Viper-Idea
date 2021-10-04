@@ -3,15 +3,8 @@ package com.yazantarifi.utils
 import com.android.ddmlib.IDevice
 import com.android.ddmlib.NullOutputReceiver
 import com.android.tools.idea.gradle.project.sync.GradleSyncState
-import com.intellij.ide.highlighter.JavaFileType
 import com.intellij.openapi.project.Project
-import com.intellij.psi.JavaPsiFacade
-import com.intellij.psi.PsiJavaFile
-import com.intellij.psi.PsiManager
 import com.intellij.psi.PsiPackage
-import com.intellij.psi.search.FileTypeIndex
-import com.intellij.psi.search.GlobalSearchScope
-import com.intellij.util.indexing.FileBasedIndex
 import com.yazantarifi.impl.AndroidDebugBridgeManagerImplementation
 import com.yazantarifi.models.AndroidDebugEvent
 import org.jetbrains.android.sdk.AndroidSdkUtils
@@ -82,7 +75,7 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
 
     override fun killApplication(device: IDevice) {
         getAvailablePackages().forEach {
-            device.kill(it.name)
+            device.kill(it.qualifiedName)
         }
     }
 
@@ -101,7 +94,7 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
 
     override fun forceStopApplication(device: IDevice) {
         getAvailablePackages().forEach {
-            device.forceStop(it.name)
+            device.forceStop(it.qualifiedName)
         }
     }
 
@@ -118,22 +111,7 @@ class AndroidDebugBridgeManager constructor(private val project: Project): Andro
     }
 
     override fun getAvailablePackages(): HashSet<PsiPackage> {
-        val ret: HashSet<PsiPackage> = HashSet()
-        val virtualFiles = FileBasedIndex.getInstance().getContainingFiles(
-                FileTypeIndex.NAME, JavaFileType.INSTANCE,
-                GlobalSearchScope.projectScope(project)
-        )
-
-        for (vf in virtualFiles) {
-            val psifile = PsiManager.getInstance(project).findFile(vf!!)
-            if (psifile is PsiJavaFile) {
-                JavaPsiFacade.getInstance(project).findPackage(psifile.packageName)?.let {
-                    ret.add(it)
-                }
-            }
-        }
-
-        return ret
+        return ApplicationUtils.getApplicationPackages(project)
     }
 
     override fun isGradleSyncExecution(): Boolean {

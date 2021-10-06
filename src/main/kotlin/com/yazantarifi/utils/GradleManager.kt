@@ -139,7 +139,7 @@ class GradleManager(private val project: Project) {
         }
     }
 
-    private fun syncProject(actionEvent: AnActionEvent) {
+    fun syncProject(actionEvent: AnActionEvent) {
         val androidSyncAction = getAction("Android.SyncProject")
         val refreshAllProjectAction = getAction("ExternalSystem.RefreshAllProjects")
         if (androidSyncAction != null && androidSyncAction !is EmptyAction) {

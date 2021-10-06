@@ -10,6 +10,7 @@ import com.intellij.psi.search.GlobalSearchScope
 import com.intellij.util.indexing.FileBasedIndex
 
 import com.intellij.openapi.project.Project
+import java.io.File
 
 object ApplicationUtils {
 
@@ -48,6 +49,13 @@ object ApplicationUtils {
         }
 
         return packageName
+    }
+
+    @JvmStatic
+    fun getPackageNameFromFile(targetFile: File, project: Project): String {
+        val projectPackageName = getPackageName(project)
+        val packageNameSplitter = targetFile.path.replace("/", ".").split(projectPackageName)
+        return if (packageNameSplitter.size > 1) projectPackageName + packageNameSplitter[1] else projectPackageName
     }
 
     @JvmStatic

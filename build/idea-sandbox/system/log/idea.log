@@ -25533,3 +25533,858 @@ java.lang.Throwable: Cannot add an action twice: Debugging Tools (ADB scripts To
 2021-10-06 23:37:55,424 [ 100953]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
 2021-10-06 23:37:55,424 [ 100953]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
 2021-10-06 23:37:55,427 [ 100956]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2021-10-06 23:39:13,832 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2021-10-06 23:39:13,870 [     38]   INFO - .intellij.util.EnvironmentUtil - loading shell env: /bin/bash -l -i -c '/Applications/Android Studio.app/Contents/bin/printenv.py' '/var/folders/6c/mm_vb6kx0bl81sd61lq736zr0000gn/T/intellij-shell-env.12040583211740826694.tmp' 
+2021-10-06 23:39:13,910 [     78]   INFO -        #com.intellij.idea.Main - IDE: Android Studio (build #AI-203.7717.56.2031.7678000, 27 Aug 2021 00:53) 
+2021-10-06 23:39:13,911 [     79]   INFO -        #com.intellij.idea.Main - OS: Mac OS X (10.16, x86_64) 
+2021-10-06 23:39:13,928 [     96]   INFO -        #com.intellij.idea.Main - JRE: 11.0.9.1+11-b1145.63 (JetBrains s.r.o.) 
+2021-10-06 23:39:13,928 [     96]   INFO -        #com.intellij.idea.Main - JVM: 11.0.9.1+11-b1145.63 (OpenJDK 64-Bit Server VM) 
+2021-10-06 23:39:13,942 [    110]   INFO -        #com.intellij.idea.Main - JVM Args: -Dapple.awt.fileDialogForDirectories=true -Dapple.laf.useScreenMenuBar=true -Didea.auto.reload.plugins=true -Didea.classpath.index.enabled=false -Didea.config.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=AndroidStudio -Didea.plugins.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/plugins -Didea.required.plugins.id=com.yazantarifi.Viper -Didea.smooth.progress=false -Didea.system.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/system -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=JO -Duser.language=en -Duser.variant -ea 
+2021-10-06 23:39:13,942 [    110]   INFO -        #com.intellij.idea.Main - library path: /Users/opensooquser/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. 
+2021-10-06 23:39:13,943 [    111]   INFO -        #com.intellij.idea.Main - boot library path: /Users/opensooquser/.gradle/caches/modules-2/files-2.1/com.jetbrains/jbre/jbr-11_0_9_1-osx-x64-b1145.63/jbr/Contents/Home/lib 
+2021-10-06 23:39:13,998 [    166]   INFO - .intellij.util.EnvironmentUtil - shell environment loaded (15 vars) 
+2021-10-06 23:39:14,004 [    172]   INFO -        #com.intellij.idea.Main - locale=en_JO JNU=UTF-8 file.encoding=UTF-8
+  idea.config.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/config
+  idea.system.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/system
+  idea.plugins.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/plugins
+  idea.log.path=/Users/opensooquser/Downloads/Viper/build/idea-sandbox/system/log 
+2021-10-06 23:39:14,415 [    583]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 411 ms 
+2021-10-06 23:39:14,584 [    752]   INFO - ntellij.idea.ApplicationLoader - CPU cores: 8; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@29fb755e[Running, parallelism = 7, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@75f139fa 
+2021-10-06 23:39:14,838 [   1006]   WARN - i.mac.MacOSApplicationProvider - No URL bundle (CFBundleURLTypes) is defined in the main bundle.
+To be able to open external links, specify protocols in the app layout section of the build file.
+Example: args.urlSchemes = ["your-protocol"] will handle following links: your-protocol://open?file=file&line=line 
+2021-10-06 23:39:14,845 [   1013]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=/Applications/Android Studio.app/Contents/plugins/Groovy, version=203.7717.56.2031.7678000) misses optional descriptor duplicates-groovy.xml 
+2021-10-06 23:39:14,847 [   1015]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Groovy, id=org.intellij.groovy, path=/Applications/Android Studio.app/Contents/plugins/Groovy, version=203.7717.56.2031.7678000) misses optional descriptor duplicates-detection-groovy.xml 
+2021-10-06 23:39:14,924 [   1092]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=/Applications/Android Studio.app/Contents/plugins/java, version=203.7717.56.2031.7678000) misses optional descriptor profiler-java.xml 
+2021-10-06 23:39:14,935 [   1103]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Java, id=com.intellij.java, path=/Applications/Android Studio.app/Contents/plugins/java, version=203.7717.56.2031.7678000) misses optional descriptor java-features-trainer.xml 
+2021-10-06 23:39:14,977 [   1145]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Kotlin, id=org.jetbrains.kotlin, path=/Applications/Android Studio.app/Contents/plugins/Kotlin, version=203-1.5.20-release-289-AS7717.8) misses optional descriptor kotlin-nodejs.xml 
+2021-10-06 23:39:14,978 [   1146]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Kotlin, id=org.jetbrains.kotlin, path=/Applications/Android Studio.app/Contents/plugins/Kotlin, version=203-1.5.20-release-289-AS7717.8) misses optional descriptor native-debug.xml 
+2021-10-06 23:39:14,980 [   1148]   INFO - llij.ide.plugins.PluginManager - Plugin PluginDescriptor(name=Kotlin, id=org.jetbrains.kotlin, path=/Applications/Android Studio.app/Contents/plugins/Kotlin, version=203-1.5.20-release-289-AS7717.8) misses optional descriptor js-debug.xml 
+2021-10-06 23:39:15,118 [   1286]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: IDEA CORE (203.7717.56), Layoutlib (203.7717.56.2031.7678000), Layoutlib Legacy (203.7717.56.2031.7678000), Google Login (203.7717.56.2031.7678000), CIDR Base (203.7717.56.2031.7678000), C/C++ Language Support (203.7717.56.2031.7678000), Clangd support (203.7717.56.2031.7678000), com.intellij.platform.images (203.7717.56.2031.7678000), JetBrains maven model api classes (203.7717.56.2031.7678000), JetBrains Repository Search (203.7717.56.2031.7678000), Subversion (203.7717.56.2031.7678000), Smali Support (203.7717.56.2031.7678000), Machine Learning Code Completion (203.7717.56.2031.7678000), Configuration Script (203.7717.56.2031.7678000), Copyright (203.7717.56.2031.7678000), Java (203.7717.56.2031.7678000), JUnit (203.7717.56.2031.7678000), Java IDE Customization (203.7717.56.2031.7678000), Java Stream Debugger (203.7717.56.2031.7678000), Java Bytecode Decompiler (203.7717.56.2031.7678000), Properties (203.7717.56.2031.7678000), Gradle (203.7717.56.2031.7678000), Java Internationalization (203.7717.56.2031.7678000), Resource Bundle Editor (203.7717.56.2031.7678000), Task Management (203.7717.56.2031.7678000), Mercurial (203.7717.56.2031.7678000), WebP Support (203.7717.56.2031.7678000), EditorConfig (203.7717.56.2031.7678000), Terminal (203.7717.56.2031.7678000), Git (203.7717.56.2031.7678000), ChangeReminder (203.7717.56.2031.7678000), GitHub (203.7717.56.2031.7678000), Next File Prediction (203.7717.56.2031.7678000), Shell Script (203.7717.56.2031.7678000), TextMate Bundles (203.7717.56.2031.7678000), YAML (203.7717.56.2031.7678000), Settings Repository (203.7717.56.2031.7678000), IntelliLang (203.7717.56.2031.7678000), TestNG (203.7717.56.2031.7678000), Code Coverage for Java (203.7717.56.2031.7678000), Groovy (203.7717.56.2031.7678000), Gradle-Java (203.7717.56.2031.7678000), Google Cloud Tools Core (203.7717.56.2031.7678000), Kotlin (203-1.5.20-release-289-AS7717.8), Android (2020.3.1 Patch 2), Google Cloud Tools For Android Studio (203.7717.56.2031.7678000), Firebase Testing (203.7717.56.2031.7678000), Compose (203.7717.56.2031.7678000), Android NDK Support (203.7717.56.2031.7678000), Android APK Support (203.7717.56.2031.7678000), Google Developers Samples (203.7717.56.2031.7678000), Test Recorder (203.7717.56.2031.7678000), Firebase Services (203.7717.56.2031.7678000), App Links Assistant (203.7717.56.2031.7678000), Firebase App Indexing (203.7717.56.2031.7678000) 
+2021-10-06 23:39:15,118 [   1286]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: Viper (1.0-SNAPSHOT) 
+2021-10-06 23:39:15,773 [   1941]   INFO - m.intellij.util.io.StorageLock - lower=100; upper=492; buffer=10; max=492 
+2021-10-06 23:39:15,781 [   1949]   INFO - tellij.util.io.FileChannelUtil - uninterruptible FileChannels will be used for indexes 
+2021-10-06 23:39:15,789 [   1957]   INFO - m.intellij.ui.mac.touchbar.NST - touchbar-server isn't running, skip nst loading 
+2021-10-06 23:39:15,873 [   2041]   INFO - tellij.util.io.storage.Storage - Space waste in /Users/opensooquser/Downloads/Viper/build/idea-sandbox/system/caches/attrib.dat is 4472503 bytes. Compacting now. 
+2021-10-06 23:39:15,874 [   2042]   INFO - tellij.util.io.storage.Storage - Compact failed: /Users/opensooquser/Downloads/Viper/build/idea-sandbox/system/caches/attrib.dat.storageData.backup 
+2021-10-06 23:39:15,874 [   2042]   INFO - tellij.util.io.storage.Storage - Done compacting in 1msec. 
+2021-10-06 23:39:15,926 [   2094]   INFO - cation.options.RegistryManager - Registry values changed by user: external.system.auto.import.disabled = true 
+2021-10-06 23:39:15,961 [   2129]   INFO - intellij.diagnostic.JitWatcher - JIT compilation state checking enabled 
+2021-10-06 23:39:15,983 [   2151]   WARN - j.internal.DebugAttachDetector - Unable to start DebugAttachDetector, please add `--add-exports java.base/jdk.internal.vm=ALL-UNNAMED` to VM options 
+2021-10-06 23:39:16,039 [   2207]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63344 
+2021-10-06 23:39:16,042 [   2210]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=13, fontScale=1.0; restored: fontSize=13, fontScale=1.0 
+2021-10-06 23:39:16,087 [   2255]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2021-10-06 23:39:16,120 [   2288]   WARN - Container.ComponentManagerImpl - Do not use constructor injection (requestorClass=com.android.tools.idea.AndroidInitialConfigurator) 
+2021-10-06 23:39:16,280 [   2448]   INFO - pi.util.registry.RegistryValue - Registry value 'external.system.auto.import.disabled' has changed to 'true' 
+2021-10-06 23:39:16,329 [   2497]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /Applications/Android Studio.app/Contents/bin/fsnotifier 
+2021-10-06 23:39:16,335 [   2503]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2021-10-06 23:39:17,116 [   3284]   INFO - leBasedIndexDataInitialization - Initialization done: 1093 
+2021-10-06 23:39:17,206 [   3374]   INFO - exImpl$StubIndexInitialization - Initialization done: 89 
+2021-10-06 23:39:17,626 [   3794]   INFO - penapi.application.Experiments - Experimental features enabled for user: wsl.p9.support, wsl.p9.show.roots.in.file.chooser, wsl.execute.with.wsl.exe, inline.browse.button, linux.native.menu, recent.and.edited.files.together, show.create.new.element.in.popup, search.everywhere.mixed.results, copy.reference.popup, i18n.match.actions, editor.reader.mode, edit.run.configurations.while.dumb, new.large.text.file.viewer, property.value.inplace.editing, terminal.shell.command.handling 
+2021-10-06 23:39:17,685 [   3853]   WARN - nSystem.impl.ActionManagerImpl - keymap "Xcode" not found [Plugin: com.intellij] 
+2021-10-06 23:39:17,695 [   3863]   WARN - nSystem.impl.ActionManagerImpl - keymap "Xcode" not found [Plugin: com.intellij.cidr.base] 
+2021-10-06 23:39:17,834 [   4002]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Generate RecyclerView Adapter (Generate recyclerView adapter template With viewHolder) 
+java.lang.Throwable: Cannot add an action twice: Generate RecyclerView Adapter (Generate recyclerView adapter template With viewHolder)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,838 [   4006]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,841 [   4009]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,842 [   4010]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,843 [   4011]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,845 [   4013]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Delete Application (Un install application From connected devices) 
+java.lang.Throwable: Cannot add an action twice: Delete Application (Un install application From connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,847 [   4015]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,847 [   4015]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,847 [   4015]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,847 [   4015]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,847 [   4015]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Force Stop Application (Force stop application In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Force Stop Application (Force stop application In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,849 [   4017]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,849 [   4017]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,849 [   4017]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,850 [   4018]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,850 [   4018]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Kill Application (Kill application In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Kill Application (Kill application In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,851 [   4019]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,851 [   4019]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,851 [   4019]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,851 [   4019]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,852 [   4020]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Application (Application commands) 
+java.lang.Throwable: Cannot add an action twice: Application (Application commands)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:891)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,852 [   4020]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,853 [   4021]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,853 [   4021]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,853 [   4021]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,853 [   4021]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Layout Bounds (Enable developer options (show layout bounds) For connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Layout Bounds (Enable developer options (show layout bounds) For connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,854 [   4022]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,854 [   4022]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,854 [   4022]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,855 [   4023]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,855 [   4023]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Layout Bounds (Hide layout bounds (ADB shell command) in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Layout Bounds (Hide layout bounds (ADB shell command) in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,856 [   4024]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,856 [   4024]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,856 [   4024]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,856 [   4024]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,857 [   4025]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Overdraw Areas (GPU Profiler) (ADB shell command To enable overdraw areas in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Overdraw Areas (GPU Profiler) (ADB shell command To enable overdraw areas in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,857 [   4025]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,857 [   4025]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,857 [   4025]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,859 [   4027]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,859 [   4027]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Overdraw Areas (ADB shell command To hide overdraw In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Overdraw Areas (ADB shell command To hide overdraw In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,859 [   4027]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,860 [   4028]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,860 [   4028]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,860 [   4028]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,861 [   4029]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Enable Don't Keep Activities Mode (ADB shell command To enable don't keep activities in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Enable Don't Keep Activities Mode (ADB shell command To enable don't keep activities in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,862 [   4030]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,862 [   4030]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,862 [   4030]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,863 [   4031]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,863 [   4031]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Disable Don't Keep Activities (Disable don't keep activities Via shell command in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Disable Don't Keep Activities (Disable don't keep activities Via shell command in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,864 [   4032]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,864 [   4032]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,864 [   4032]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,865 [   4033]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,865 [   4033]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Taps (Touches) (Show taps In connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Taps (Touches) (Show taps In connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,866 [   4034]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,866 [   4034]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,866 [   4034]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,867 [   4035]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,868 [   4036]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Taps (Touches) (Hide taps in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Taps (Touches) (Hide taps in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,868 [   4036]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,868 [   4036]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,868 [   4036]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,869 [   4037]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,869 [   4037]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Show Pointer Location (Show pointer location in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Show Pointer Location (Show pointer location in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,870 [   4038]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,870 [   4038]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,870 [   4038]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,870 [   4038]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,870 [   4038]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Hide Pointer Location (Hide pointer location in connected devices) 
+java.lang.Throwable: Cannot add an action twice: Hide Pointer Location (Hide pointer location in connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,871 [   4039]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,871 [   4039]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,871 [   4039]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,871 [   4039]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,872 [   4040]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Clear Application Data (Clear application data for available package name) 
+java.lang.Throwable: Cannot add an action twice: Clear Application Data (Clear application data for available package name)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,872 [   4040]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,872 [   4040]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,872 [   4040]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,872 [   4040]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,872 [   4040]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Remove All Permissions (Remove all permissions By revok The granted permissions) 
+java.lang.Throwable: Cannot add an action twice: Remove All Permissions (Remove all permissions By revok The granted permissions)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,873 [   4041]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,873 [   4041]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,873 [   4041]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,873 [   4041]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,873 [   4041]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Clear Application Data and Restart (Clear application data By available package name and restart The application on connected devices) 
+java.lang.Throwable: Cannot add an action twice: Clear Application Data and Restart (Clear application data By available package name and restart The application on connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:882)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:889)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,874 [   4042]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,874 [   4042]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,874 [   4042]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,874 [   4042]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,876 [   4044]  ERROR - ctionSystem.DefaultActionGroup - Cannot add an action twice: Debugging Tools (ADB scripts To connected devices) 
+java.lang.Throwable: Cannot add an action twice: Debugging Tools (ADB scripts To connected devices)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:165)
+	at com.intellij.openapi.actionSystem.DefaultActionGroup.addAction(DefaultActionGroup.java:179)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.addToGroupInner(ActionManagerImpl.java:970)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.processGroupElement(ActionManagerImpl.java:891)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerPluginActions(ActionManagerImpl.java:538)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.registerActions(ActionManagerImpl.java:200)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.<init>(ActionManagerImpl.java:177)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.intellij.serviceContainer.ConstructorInjectionKt.instantiateUsingPicoContainer(constructorInjection.kt:47)
+	at com.intellij.serviceContainer.ComponentManagerImpl.instantiateClassWithConstructorInjection(ComponentManagerImpl.kt:733)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.createAndInitialize(ServiceComponentAdapter.kt:49)
+	at com.intellij.serviceContainer.ServiceComponentAdapter.doCreateInstance(ServiceComponentAdapter.kt:37)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstanceUncached(BaseComponentAdapter.kt:113)
+	at com.intellij.serviceContainer.BaseComponentAdapter.getInstance(BaseComponentAdapter.kt:67)
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:457)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:440)
+	at com.intellij.openapi.actionSystem.ActionManager.getInstance(ActionManager.java:29)
+	at com.intellij.openapi.wm.impl.welcomeScreen.WelcomeFrame.lambda$prepareToShow$0(WelcomeFrame.java:166)
+	at com.intellij.openapi.application.impl.ApplicationImpl$1.call(ApplicationImpl.java:276)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-06 23:39:17,876 [   4044]  ERROR - ctionSystem.DefaultActionGroup - Android Studio Arctic Fox | 2020.3.1 Patch 2  Build #AI-203.7717.56.2031.7678000 
+2021-10-06 23:39:17,876 [   4044]  ERROR - ctionSystem.DefaultActionGroup - JDK: 11.0.9.1; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o. 
+2021-10-06 23:39:17,876 [   4044]  ERROR - ctionSystem.DefaultActionGroup - OS: Mac OS X 
+2021-10-06 23:39:17,877 [   4045]  ERROR - ctionSystem.DefaultActionGroup - Last Action:  
+2021-10-06 23:39:17,920 [   4088]   INFO - verflags.ServerFlagInitializer - Enabled server flags:  
+2021-10-06 23:39:18,560 [   4728]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-10-06 23:39:18,561 [   4729]   INFO - eStyle.CustomCodeStyleSettings - Loaded org.jetbrains.kotlin.idea.core.formatter.KotlinCodeStyleSettings 
+2021-10-06 23:39:18,570 [   4738]   INFO - eStyle.CommonCodeStyleSettings - Loaded XML common code style settings 
+2021-10-06 23:39:18,570 [   4738]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-10-06 23:39:18,571 [   4739]   INFO - eStyle.CommonCodeStyleSettings - Loaded Kotlin common code style settings 
+2021-10-06 23:39:19,274 [   5442]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/addons_list-4.xml 
+2021-10-06 23:39:19,637 [   5805]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/repository2-2.xml 
+2021-10-06 23:39:19,637 [   5805]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/repository2-1.xml 
+2021-10-06 23:39:19,637 [   5805]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android/sys-img2-2.xml 
+2021-10-06 23:39:19,638 [   5806]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-automotive/sys-img2-2.xml 
+2021-10-06 23:39:19,639 [   5807]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-wear-cn/sys-img2-2.xml 
+2021-10-06 23:39:19,640 [   5808]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-tv/sys-img2-2.xml 
+2021-10-06 23:39:19,639 [   5807]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/android-wear/sys-img2-2.xml 
+2021-10-06 23:39:19,642 [   5810]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/aosp_atd/sys-img2-2.xml 
+2021-10-06 23:39:19,643 [   5811]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google-tv/sys-img2-2.xml 
+2021-10-06 23:39:19,644 [   5812]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google_atd/sys-img2-2.xml 
+2021-10-06 23:39:19,644 [   5812]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google_apis/sys-img2-2.xml 
+2021-10-06 23:39:19,644 [   5812]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/sys-img/google_apis_playstore/sys-img2-2.xml 
+2021-10-06 23:39:19,644 [   5812]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/addon2-2.xml 
+2021-10-06 23:39:19,645 [   5813]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/glass/addon2-2.xml 
+2021-10-06 23:39:19,646 [   5814]   INFO - s.RepoProgressIndicatorAdapter - Downloading https://dl.google.com/android/repository/extras/intel/addon2-2.xml 
+2021-10-06 23:39:21,212 [   7380]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2021-10-06 23:39:24,810 [  10978]   INFO - rd.FirstRunWizardFrameProvider - Overriding welcome frame to be resizable 
+2021-10-06 23:39:26,181 [  12349]   INFO - BridgeProjectLifecycleListener - Using workspace model to open project 
+2021-10-06 23:39:26,254 [  12422]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2021-10-06 23:39:26,307 [  12475]   INFO - pl.projectlevelman.NewMappings - VCS Root: [Git] - [<Project>] 
+2021-10-06 23:39:26,561 [  12729]   WARN - tartup.impl.StartupManagerImpl - Activities registered via registerPostStartupActivity must be dumb-aware: com.android.tools.idea.stats.AndroidStudioUsageTracker$ProjectLifecycleTracker$projectComponentsInitialized$1@247ab042 
+2021-10-06 23:39:26,562 [  12730]   INFO - on.JpsProjectModelSynchronizer - Workspace model loaded without cache. Loading real project state into workspace model. Thread[ApplicationImpl pooled thread 6,4,Idea Thread Group] 
+2021-10-06 23:39:27,758 [  13926]   INFO - ectsystem.ProjectSystemService - GradleProjectSystem project system has been detected 
+2021-10-06 23:39:28,229 [  14397]   INFO - artup.AndroidStudioInitializer - Failed to disable 'org.intellij.plugins.intelliLang.inject.groovy.GrConcatenationInjector' 
+2021-10-06 23:39:29,502 [  15670]   INFO -  #git4idea.commands.GitHandler - [.] git version 
+2021-10-06 23:39:29,523 [  15691]   INFO -  #git4idea.commands.GitHandler - git version 2.27.0 
+2021-10-06 23:39:29,528 [  15696]   INFO - pl.projectlevelman.NewMappings - Mapped Roots: 1 
+2021-10-06 23:39:29,555 [  15723]   INFO - ea.config.GitExecutableManager - Git version for /usr/local/bin/git: 2.27.0.0 (UNIX) 
+2021-10-06 23:39:29,578 [  15746]   INFO - roid.tools.idea.adb.AdbService - Initializing adb using: /Users/opensooquser/Library/Android/sdk/platform-tools/adb 
+2021-10-06 23:39:29,640 [  15808]   INFO -            #com.android.ddmlib - Connected to adb for device monitoring 
+2021-10-06 23:39:29,746 [  15914]   WARN - Container.ComponentManagerImpl - Do not use constructor injection (requestorClass=com.android.tools.idea.apk.ApkWritingAccessProvider) 
+2021-10-06 23:39:29,837 [  16005]   INFO - roid.tools.idea.adb.AdbService - Successfully connected to adb 
+2021-10-06 23:39:30,914 [  17082]   INFO - ge.ExternalProjectsDataStorage - Load external projects data in 1403 millis (read time: 1396) 
+2021-10-06 23:39:30,949 [  17117]   INFO - ngd.lsp.ClangDaemonContextImpl - Using clangd from: /Applications/Android Studio.app/Contents/plugins/c-plugin/bin/clang/mac/clangd 
+2021-10-06 23:39:31,250 [  17418]   INFO - t.datamodel.TutorialBundleData - Found unhandled xml 
+2021-10-06 23:39:31,269 [  17437]   INFO - ProjectRootPostStartUpActivity - /Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt/.idea case-sensitivity: expected=false actual=false 
+2021-10-06 23:39:31,276 [  17444]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2021-10-06 23:39:31,314 [  17482]   INFO - CompilerWorkspaceConfiguration - Available processors: 8 
+2021-10-06 23:39:31,337 [  17505]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 1979ms; general responsiveness: ok; EDT responsiveness: 0/2 sluggish, 1/2 very slow 
+2021-10-06 23:39:31,547 [  17715]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@a776005 
+2021-10-06 23:39:31,628 [  17796]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 5488 ms 
+2021-10-06 23:39:31,711 [  17879]   INFO - .imports.GMavenIndexRepository - HTTP not modified since the last request for URL: https://dl.google.com/android/studio/gmaven/index/release/v0.1/classes-v0.1.json.gz (etag: "acdfda"). 
+2021-10-06 23:39:31,712 [  17880]   INFO - .imports.GMavenIndexRepository - Kept the old disk cache with an old ETag header: "acdfda". 
+2021-10-06 23:39:32,031 [  18199]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 431ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-10-06 23:39:32,784 [  18952]   INFO - dle.roots.GradleBuildRootIndex - /Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt: null -> org.jetbrains.kotlin.idea.scripting.gradle.roots.Imported@4bc49521 
+2021-10-06 23:39:32,802 [  18970]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] script definitions aren't loaded yet. They should be loaded by invoking GradleScriptDefinitionsContributor.reloadIfNeeded from KotlinDslSyncListener: workingDir=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt gradleHome=/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1 
+2021-10-06 23:39:36,154 [  22322]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 4122ms; general responsiveness: ok; EDT responsiveness: ok 
+2021-10-06 23:39:36,171 [  22339]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 0 files to index 
+2021-10-06 23:39:36,174 [  22342]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.jetbrains.cidr.lang.symbols.symtable.OCSymbolTablesBuildingActivity$1@74f43d60 
+2021-10-06 23:39:36,186 [  22354]   INFO -       #com.jetbrains.cidr.lang - Clearing symbols finished in 4 ms 
+2021-10-06 23:39:36,197 [  22365]   INFO -       #com.jetbrains.cidr.lang - Loading Header Maps finished in 11 ms 
+2021-10-06 23:39:36,203 [  22371]   INFO -       #com.jetbrains.cidr.lang - Loading Headers Search Roots finished in 1 ms 
+2021-10-06 23:39:36,260 [  22428]   INFO - .jetbrains.cidr.lang.modulemap - Loaded 0 module maps in 0 packs for 0 search roots 
+2021-10-06 23:39:36,260 [  22428]   INFO -       #com.jetbrains.cidr.lang - Loading Module Maps finished in 57 ms 
+2021-10-06 23:39:36,536 [  22704]   INFO -       #com.jetbrains.cidr.lang - Loaded 0 tables for 0 files (0 project files) 
+2021-10-06 23:39:36,536 [  22704]   INFO -       #com.jetbrains.cidr.lang - Loading symbols finished in 275 ms 
+2021-10-06 23:39:36,548 [  22716]   INFO - .jetbrains.cidr.lang.modulemap - Building module maps for 0 (root, configuration) pairs 
+2021-10-06 23:39:36,556 [  22724]   INFO -       #com.jetbrains.cidr.lang - Building module maps finished in 2 ms 
+2021-10-06 23:39:36,557 [  22725]   INFO -       #com.jetbrains.cidr.lang - Processing module maps finished in 0 ms 
+2021-10-06 23:39:36,560 [  22728]   INFO -       #com.jetbrains.cidr.lang - Saved 0 module maps in 0 packs 
+2021-10-06 23:39:36,567 [  22735]   INFO -       #com.jetbrains.cidr.lang - Saving Module Maps finished in 9 ms 
+2021-10-06 23:39:36,568 [  22736]   INFO -       #com.jetbrains.cidr.lang - Building symbols for 0 source files 
+2021-10-06 23:39:36,577 [  22745]   INFO -       #com.jetbrains.cidr.lang - Updating symbols finished in 2 ms 
+2021-10-06 23:39:36,577 [  22745]   INFO -       #com.jetbrains.cidr.lang - Building symbols for 0 unused headers 
+2021-10-06 23:39:36,577 [  22745]   INFO -       #com.jetbrains.cidr.lang - Updating symbols finished in 0 ms 
+2021-10-06 23:39:36,577 [  22745]   INFO -       #com.jetbrains.cidr.lang - Updating symbols finished in 0 ms 
+2021-10-06 23:39:36,578 [  22746]   INFO -       #com.jetbrains.cidr.lang - Building symbols in FAST mode, 0 source files from total 0 project files 
+2021-10-06 23:39:36,582 [  22750]   INFO -       #com.jetbrains.cidr.lang - Saving modified symbols for 0 files (0 tables of total 0) 
+2021-10-06 23:39:36,585 [  22753]   INFO -       #com.jetbrains.cidr.lang - Saving symbols finished in 6 ms 
+2021-10-06 23:39:36,595 [  22763]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@7de13864 
+2021-10-06 23:39:36,620 [  22788]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@66a9b8e6 
+2021-10-06 23:39:36,628 [  22796]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-10-06 23:39:36,640 [  22808]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=Shake Reporter, containerState=COMPONENT_CREATED, componentStore=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt) 
+2021-10-06 23:39:36,996 [  23164]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /Users/opensooquser/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home 
+2021-10-06 23:39:37,011 [  23179]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinInitScript] using classpath: /Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-api-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-tooling-models-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/kotlin-compiler-embeddable-1.3.72-patched-for-gradle-6.7.1.jar 
+2021-10-06 23:39:37,060 [  23228]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@273686b 
+2021-10-06 23:39:37,137 [  23305]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /Users/opensooquser/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home 
+2021-10-06 23:39:37,138 [  23306]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinSettingsScript] using classpath: /Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-api-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-tooling-models-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/kotlin-compiler-embeddable-1.3.72-patched-for-gradle-6.7.1.jar 
+2021-10-06 23:39:37,195 [  23363]   INFO - s.plugins.gradle.GradleManager - Instructing gradle to use java from /Users/opensooquser/Library/Java/JavaVirtualMachines/corretto-1.8.0_275/Contents/Home 
+2021-10-06 23:39:37,197 [  23365]   INFO - g.jetbrains.kotlin.idea.script - [KOTLIN_SCRIPTING] Loading script definitions [org.gradle.kotlin.dsl.KotlinBuildScript] using classpath: /Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-api-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-core-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/gradle-kotlin-dsl-tooling-models-6.7.1.jar:/Users/opensooquser/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/lib/kotlin-compiler-embeddable-1.3.72-patched-for-gradle-6.7.1.jar 
+2021-10-06 23:39:37,240 [  23408]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-10-06 23:39:37,244 [  23412]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=Shake Reporter, containerState=COMPONENT_CREATED, componentStore=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt) 
+2021-10-06 23:39:37,310 [  23478]   INFO - testKnownPluginVersionProvider - 'gradle' plugin missing from the offline Maven repo, will use default 7.0.2 
+2021-10-06 23:39:37,313 [  23481]   INFO - testKnownPluginVersionProvider - 'gradle' plugin missing from the offline Maven repo, will use default 7.0.2 
+2021-10-06 23:39:37,313 [  23481]   INFO - idGradleProjectStartupActivity - Up-to-date models found in the cache. Not invoking Gradle sync. 
+2021-10-06 23:39:37,329 [  23497]   INFO - testKnownPluginVersionProvider - 'gradle' plugin missing from the offline Maven repo, will use default 7.0.2 
+2021-10-06 23:39:37,719 [  23887]   INFO - ativeWorkspaceModificationTask - NDK support for project 'Shake Reporter' is disabled because the project doesn't contain any valid native configurations. 
+2021-10-06 23:39:38,006 [  24174]   INFO - roject.DumbServiceGuiTaskQueue - Running dumb mode task: com.intellij.openapi.roots.impl.PushedFilePropertiesUpdaterImpl$3@40e6da16 
+2021-10-06 23:39:38,066 [  24234]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2021-10-06 23:39:38,067 [  24235]   INFO - tFileBasedIndexStartupActivity - Has changed files: false; project=Project(name=Shake Reporter, containerState=COMPONENT_CREATED, componentStore=/Users/opensooquser/Downloads/gitt/Shake-Reporter-Kt) 
+2021-10-06 23:39:41,349 [  27517]   WARN - actions.CopyTBXReferenceAction - Cannot find TBX tool for IDE: AndroidStudio 
+2021-10-06 23:39:41,759 [  27927]   WARN - ystem.impl.ActionPopupMenuImpl - 1115ms to fill popup menu ProjectViewPopup 
+2021-10-06 23:39:41,815 [  27983]   WARN - actions.CopyTBXReferenceAction - Cannot find TBX tool for IDE: AndroidStudio 
+2021-10-06 23:39:57,838 [  44006]   INFO - roid.tools.idea.adb.AdbService - Ddmlib can be terminated as all projects have been closed 
+2021-10-06 23:39:57,839 [  44007]   INFO - roid.tools.idea.adb.AdbService - Terminating ADB connection 
+2021-10-06 23:39:57,856 [  44024]   INFO - roid.tools.idea.adb.AdbService - ADB connection successfully terminated 
+2021-10-06 23:39:58,082 [  44250]   INFO - rationStore.ComponentStoreImpl - Saving appLafManager took 11 ms, TodoConfiguration took 21 ms 
+2021-10-06 23:39:58,200 [  44368]   INFO - rd.FirstRunWizardFrameProvider - Overriding welcome frame to be resizable 

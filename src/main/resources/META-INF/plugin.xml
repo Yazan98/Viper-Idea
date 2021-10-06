@@ -17,18 +17,26 @@
 
     <actions>
         <group text="Viper"
+               id="ViperGenerators"
+               description="Code generators To generate common templates"
+               popup="true">
+
+            <action id="com.yazantarifi.actions.generate.RecyclerViewAdapterGenerator"
+                    class="com.yazantarifi.actions.generate.RecyclerViewAdapterGenerator"
+                    text="Generate RecyclerView Adapter"
+                    description="Generate recyclerView adapter template With viewHolder">
+                <add-to-group group-id="ViperGenerators" anchor="first"/>
+                <add-to-group group-id="NewGroup" relative-to-action="NewGroup" anchor="before" />
+            </action>
+
+        </group>
+
+        <group text="Viper"
                id="ParentList"
                description="ADB scripts To connected devices"
                popup="true">
 
             <add-to-group group-id="MainMenu" anchor="last"/>
-
-            <group text="Code Generators"
-                   id="CodeGenerators"
-                   description="Common android used code pre generated"
-                   popup="true">
-
-            </group>
 
             <group text="Application"
                     id="Applications"

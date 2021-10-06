@@ -13,10 +13,10 @@ import javax.swing.JTextField
 
 class FeatureNameDialog constructor(
     project: Project,
+    private val featureNamePlaceHolder: String,
     private val onActionExecute: (String) -> Unit
 ): DialogWrapper(project, true) {
 
-    private val featureNamePlaceHolder = "Write RecyclerView Adapter Name"
     private val notificationManager: IdeaNotificationsManager by lazy { IdeaNotificationsManager(project) }
     private val textPlaceHolder: JTextField by lazy {
         JTextField(featureNamePlaceHolder).apply {

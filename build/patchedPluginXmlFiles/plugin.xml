@@ -21,6 +21,12 @@
       <action id="com.yazantarifi.actions.generate.RecyclerViewAdapterGenerator" class="com.yazantarifi.actions.generate.RecyclerViewAdapterGenerator" text="Generate RecyclerView Adapter" description="Generate recyclerView adapter template With viewHolder">
         <add-to-group group-id="ViperGenerators" anchor="first"/>
       </action>
+      <action id="com.yazantarifi.actions.generate.FirebaseNotificationsServiceGenerator" class="com.yazantarifi.actions.generate.FirebaseNotificationsServiceGenerator" text="Generate Firebase Messaging Service" description="Generate service For firebase notifications">
+        <add-to-group group-id="ViperGenerators" anchor="first"/>
+      </action>
+      <action id="com.yazantarifi.actions.generate.WorkManagerDailyTaskGenerator" class="com.yazantarifi.actions.generate.WorkManagerDailyTaskGenerator" text="Generate Daily Work Manager" description="Generate Daily WorkManager Task in Current Project">
+        <add-to-group group-id="ViperGenerators" anchor="first"/>
+      </action>
     </group>
     <group text="Viper" id="ParentList" description="ADB scripts To connected devices" popup="true">
       <add-to-group group-id="MainMenu" anchor="last"/>

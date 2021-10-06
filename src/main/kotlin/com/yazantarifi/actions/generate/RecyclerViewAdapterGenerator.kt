@@ -14,7 +14,7 @@ import java.io.FileWriter
 class RecyclerViewAdapterGenerator: AnAction() {
 
     companion object {
-        private const val RECYCLER_VIEW_DEPENDENCY = "androidx.recyclerview:recyclerview:1.2.1"
+        private const val RECYCLER_VIEW_DEPENDENCY = "implementation(\"androidx.recyclerview:recyclerview:1.2.1\")"
         private const val RECYCLER_VIEW_KEY = "recyclerview"
 
         private const val HOLDERS_FILE = "holders"
@@ -24,7 +24,7 @@ class RecyclerViewAdapterGenerator: AnAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
         e.project?.let { project ->
-            FeatureNameDialog(project) {
+            FeatureNameDialog(project, "Write RecyclerView Adapter Name") {
                 if (!ApplicationUtils.isEmpty(it)) {
                     executeNewFeatureEvent(project, it, e)
                 }

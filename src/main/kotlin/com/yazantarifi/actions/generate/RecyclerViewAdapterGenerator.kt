@@ -33,7 +33,6 @@ class RecyclerViewAdapterGenerator: AnAction() {
     }
 
     private fun executeNewFeatureEvent(project: Project, featureName: String, event: AnActionEvent) {
-        executeGradleDependency(project, event)
         FilesUtil.getVirtualFileByAction(event)?.let {
             if (it.exists()) {
                 validateFilesStructure(it)
@@ -41,6 +40,7 @@ class RecyclerViewAdapterGenerator: AnAction() {
                 generateAdapterFile(it, featureName, project)
                 generateClickListenerFile(it, featureName, project)
                 it.refresh(false, true)
+                executeGradleDependency(project, event)
             }
         }
     }

@@ -77,7 +77,8 @@ class FeatureGeneratorDialog constructor(
             isNavigationComponentSupported.isSelected,
             !isNavigationComponentSupported.isSelected,
             isFragmentsGeneratedOnlyField.isSelected,
-            isFragmentListGeneratedField.isSelected
+            isFragmentListGeneratedField.isSelected,
+            isMapAutoCompleteViewGeneratedField.isSelected
         ))
     }
 

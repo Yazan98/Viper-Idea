@@ -16,6 +16,12 @@
     <tools.idea.wizard.template.wizardTemplateProvider implementation="com.yazantarifi.template.simple.SimpleWizardTemplateProvider"/>
   </extensions>
   <actions>
+    <group text="Viper" id="InClassGenerators" description="Generate Code in Class" popup="true">
+      <add-to-group group-id="GenerateGroup" relative-to-action="GenerateGroup" anchor="before"/>
+      <action id="com.yazantarifi.actions.generate.FragmentExtrasGeneratorAction" class="com.yazantarifi.actions.generate.FragmentExtrasGeneratorAction" text="Generate Fragment Extras" description="Generate fragment getExtras method To return full arguments instance (bundle)">
+        <add-to-group group-id="InClassGenerators" anchor="first"/>
+      </action>
+    </group>
     <group text="Viper" id="ViperGenerators" description="Code generators To generate common templates" popup="true">
       <add-to-group group-id="NewGroup" relative-to-action="NewGroup" anchor="before"/>
       <action id="com.yazantarifi.actions.generate.RecyclerViewAdapterGenerator" class="com.yazantarifi.actions.generate.RecyclerViewAdapterGenerator" text="Generate RecyclerView Adapter" description="Generate recyclerView adapter template With viewHolder">
@@ -29,6 +35,9 @@
       </action>
       <action id="com.yazantarifi.actions.generate.ApplicationThemeGenerator" class="com.yazantarifi.actions.generate.ApplicationThemeGenerator" text="Generate Activity Theme" description="Generate default activity theme in current project">
         <add-to-group group-id="ViperGenerators" anchor="last"/>
+      </action>
+      <action id="com.yazantarifi.actions.generate.ApplicationFeatureGeneratorAction" class="com.yazantarifi.actions.generate.ApplicationFeatureGeneratorAction" text="Generate Feature" description="Generate feature With activity, fragments, bundle extras">
+        <add-to-group group-id="ViperGenerators" anchor="first"/>
       </action>
     </group>
     <group text="Viper" id="ParentList" description="ADB scripts To connected devices" popup="true">

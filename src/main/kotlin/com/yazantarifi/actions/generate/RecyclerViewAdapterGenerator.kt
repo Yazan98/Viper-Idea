@@ -60,7 +60,10 @@ class RecyclerViewAdapterGenerator: AnAction() {
                 writter.write("package ${packageName}\n")
                 writter.write("\n")
                 writter.write("\n")
-                ApplicationUtils.addClassHeaderComment(writter)
+                ApplicationUtils.addClassHeaderComment(writter, arrayListOf(
+                    "This Interface is the click Listener on the Whole Item Inside Your Adapter",
+                    "The Current Method Implemented On Click Listener on the Item inside onBindViewHolder Method"
+                ))
                 writter.write("interface ${featureName}ClickListener {\n")
                 writter.write("\n")
                 writter.write("     fun onItemClicked(item: Item)\n")
@@ -92,7 +95,12 @@ class RecyclerViewAdapterGenerator: AnAction() {
                 writter.write("import ${packageName}.listeners.${featureName}ClickListener\n")
                 writter.write("import ${ApplicationUtils.getPackageName(project)}.R\n")
                 writter.write("\n")
-                ApplicationUtils.addClassHeaderComment(writter)
+                ApplicationUtils.addClassHeaderComment(writter, arrayListOf(
+                    "RecyclerView Generated Code Adapter (Single Item View)",
+                    "You Can Replace Item With Your Data Class Inside Your Application",
+                    "And Your Click Callback To Your Data Class Inside Your Application",
+                    "This Class Will Hold All Items Inside Your List and Connect Them With ViewHolder"
+                ))
                 writter.write("class ${featureName}Adapter constructor(\n")
                 writter.write("    private val items: ArrayList<Item>,\n")
                 writter.write("    private val itemsClickListener: ${featureName}ClickListener? = null\n")
@@ -140,7 +148,11 @@ class RecyclerViewAdapterGenerator: AnAction() {
                 writter.write("import ${ApplicationUtils.getPackageName(project)}.R\n")
                 writter.write("\n")
                 writter.write("\n")
-                ApplicationUtils.addClassHeaderComment(writter)
+                ApplicationUtils.addClassHeaderComment(writter, arrayListOf(
+                    "RecyclerView Adapter ViewHolder Generated",
+                    "This File Will Hold All Views Inside Your Adapter",
+                    "You Can Bind All Views Inside onBindViewHolder In Adapter"
+                ))
                 writter.write("class ${featureName + "ViewHolder"} constructor(view: View): RecyclerView.ViewHolder(view) {\n")
                 writter.write("    val parentView: View? = view.findViewById(R.id.container)\n")
                 writter.write("}\n")

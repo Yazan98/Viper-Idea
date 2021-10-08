@@ -65,12 +65,16 @@ object ApplicationUtils {
     }
 
     @JvmStatic
-    fun addClassHeaderComment(fileWriter: FileWriter) {
+    fun addClassHeaderComment(fileWriter: FileWriter, items: ArrayList<String>? = null) {
         fileWriter.write("/**\n")
         fileWriter.write(" * This File Generated Via Viper Code Generator (Intellij Plugin)\n")
         fileWriter.write(" * Viper Generator is an Open Source Plugin to Generate Android Applications Code\n")
         fileWriter.write(" * Version 1.0.0\n")
         fileWriter.write(" * Viper Link : https://github.com/Yazan98/Viper\n")
+        fileWriter.write(" * \n")
+        items?.forEach {
+            fileWriter.write(" * $it\n")
+        }
         fileWriter.write(" */\n")
     }
 

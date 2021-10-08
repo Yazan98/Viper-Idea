@@ -55,7 +55,12 @@ class WorkManagerDailyTaskGenerator: AnAction() {
                         this.write("import java.util.concurrent.TimeUnit\n")
                         this.write("\n")
                         this.write("\n")
-                        ApplicationUtils.addClassHeaderComment(this)
+                        ApplicationUtils.addClassHeaderComment(this, arrayListOf(
+                            "Work Manager is Long Running Task In Background",
+                            "This Generated Code With StartWorker Method to Start WorkManager",
+                            "With Scheduler Task Each 24 Hours Will Trigger doWork Method",
+                            "You Can Call startWorker Method inside Your Application Instance Class"
+                        ))
                         this.write("class ${name}WorkManager constructor(\n")
                         this.write("    context: Context, params: WorkerParameters\n")
                         this.write(") : Worker(context, params) {\n")

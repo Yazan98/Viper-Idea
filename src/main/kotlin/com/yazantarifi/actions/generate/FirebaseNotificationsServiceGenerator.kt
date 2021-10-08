@@ -34,7 +34,7 @@ class FirebaseNotificationsServiceGenerator: AnAction() {
         FilesUtil.getVirtualFileByAction(event)?.let {
             if (it.exists()) {
                 generateFirebaseServiceFile(it, name, project)
-                it.refresh(false, true)
+                it.refresh(false, false)
                 executeGradleDependency(project, event)
             }
         }
@@ -66,7 +66,31 @@ class FirebaseNotificationsServiceGenerator: AnAction() {
                         this.write("import timber.log.Timber\n")
                         this.write("import java.util.*\n")
                         this.write("\n")
-                        ApplicationUtils.addClassHeaderComment(this)
+                        ApplicationUtils.addClassHeaderComment(this, arrayListOf(
+                            "Firebase Messaging Service Generated Code",
+                            "This Class Will Show Dialog With Title, Body From Notification Information",
+                            "Also This Class has CreateNotificationChannel Method and Should Be Created in Application Instance Class",
+                            "To Create Notifications Channels From Android >= M",
+                            "",
+                            "You Need to Declare The Class Instance Inside Your Manifest Like the Following",
+                            "",
+                            "<meta-data",
+                            "    android:name=\"firebase_messaging_auto_init_enabled\"",
+                            "    android:value=\"true\" />",
+                            "",
+                            "<meta-data",
+                            "    android:name=\"firebase_analytics_collection_enabled\"",
+                            "    android:value=\"true\" />",
+                            "",
+                            "",
+                            "<service",
+                            "    android:name=\"${filePackageName}.FirebaseNotificationsService\"",
+                            "    android:exported=\"false\">",
+                            "    <intent-filter>",
+                            "        <action android:name=\"com.google.firebase.MESSAGING_EVENT\" />",
+                            "    </intent-filter>",
+                            "</service>"
+                        ))
                         this.write("class ${name}FirebaseNotificationsService: FirebaseMessagingService() {\n")
                         this.write("\n")
                         this.write("    companion object {\n")

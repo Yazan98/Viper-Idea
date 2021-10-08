@@ -18,7 +18,7 @@ class FeatureGeneratorDialog constructor(
     private val featureNameField: JTextField by lazy { JTextField("") }
     private val isViewModelGeneratedField: JCheckBox by lazy { getCheckBoxInstance("ViewModel Generation") }
     private val isNavigationComponentSupported: JCheckBox by lazy { getCheckBoxInstance("Is Navigation With NavigationComponents") }
-    private val isFragmentsGeneratedOnlyField: JCheckBox by lazy { getCheckBoxInstance("Fragments Generation Only") }
+    private val isFragmentsGeneratedOnlyField: JCheckBox by lazy { getCheckBoxInstance("Fragments Generation Only", false) }
     private val isFragmentListGeneratedField: JCheckBox by lazy { getCheckBoxInstance("Fragment RecyclerView Generation", false) }
     private val isMapAutoCompleteViewGeneratedField: JCheckBox by lazy {
         getCheckBoxInstance("Map Auto Complete View Generation").apply {
@@ -43,7 +43,7 @@ class FeatureGeneratorDialog constructor(
     }
 
     override fun createCenterPanel(): JComponent? {
-        return JPanel(GridLayout(10, 1)).apply {
+        return JPanel(GridLayout(12, 1)).apply {
             add(JLabel("Enter Package Name"))
             add(packageNameField)
             add(JLabel("Enter Feature Name"))

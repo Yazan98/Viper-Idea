@@ -3,6 +3,7 @@ package com.yazantarifi.ui
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.DialogWrapper
 import com.yazantarifi.utils.IdeaNotificationsManager
+import org.jdesktop.swingx.JXLabel
 import java.awt.BorderLayout
 import java.awt.Toolkit
 import java.awt.datatransfer.Clipboard
@@ -16,6 +17,7 @@ class MaterialThemeDialogGenerator constructor(private val project: Project): Di
     companion object {
         private val DIALOG_CONTENT = """
             <!-- Generated Code To Default Activity Theme -->
+            <!-- Generated Theme Via Viper Plugin -->
             <style name="Theme.MainScreen" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
                 <item name="colorPrimary">@color/purple_500</item>
                 <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -32,6 +34,7 @@ class MaterialThemeDialogGenerator constructor(private val project: Project): Di
 
     init {
         title = "Activity Theme Content"
+        setOKButtonText("Copy")
         init()
     }
 
@@ -42,7 +45,9 @@ class MaterialThemeDialogGenerator constructor(private val project: Project): Di
     }
 
     private fun getThemeContent(): JLabel {
-        return JLabel(DIALOG_CONTENT)
+        return JXLabel(DIALOG_CONTENT).apply {
+            isLineWrap = true
+        }
     }
 
     override fun doOKAction() {

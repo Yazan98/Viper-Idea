@@ -11,6 +11,7 @@ import com.intellij.util.indexing.FileBasedIndex
 
 import com.intellij.openapi.project.Project
 import java.io.File
+import java.io.FileWriter
 
 object ApplicationUtils {
 
@@ -61,6 +62,16 @@ object ApplicationUtils {
     @JvmStatic
     fun isEmpty(text: String?): Boolean {
         return text == null || text.isEmpty()
+    }
+
+    @JvmStatic
+    fun addClassHeaderComment(fileWriter: FileWriter) {
+        fileWriter.write("/**\n")
+        fileWriter.write(" * This File Generated Via Viper Code Generator (Intellij Plugin)\n")
+        fileWriter.write(" * Viper Generator is an Open Source Plugin to Generate Android Applications Code\n")
+        fileWriter.write(" * Version 1.0.0\n")
+        fileWriter.write(" * Viper Link : https://github.com/Yazan98/Viper\n")
+        fileWriter.write(" */\n")
     }
 
 }

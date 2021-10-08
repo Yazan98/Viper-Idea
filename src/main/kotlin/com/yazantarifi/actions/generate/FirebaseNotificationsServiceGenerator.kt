@@ -66,6 +66,7 @@ class FirebaseNotificationsServiceGenerator: AnAction() {
                         this.write("import timber.log.Timber\n")
                         this.write("import java.util.*\n")
                         this.write("\n")
+                        ApplicationUtils.addClassHeaderComment(this)
                         this.write("class ${name}FirebaseNotificationsService: FirebaseMessagingService() {\n")
                         this.write("\n")
                         this.write("    companion object {\n")

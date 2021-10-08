@@ -40,8 +40,14 @@
             <action id="com.yazantarifi.actions.generate.WorkManagerDailyTaskGenerator"
                     class="com.yazantarifi.actions.generate.WorkManagerDailyTaskGenerator"
                     text="Generate Daily Work Manager"
-                    description="Generate Daily WorkManager Task in Current Project">
+                    description="Generate daily workManager task in current project">
                 <add-to-group group-id="ViperGenerators" anchor="first"/>
+            </action>
+
+            <action id="com.yazantarifi.actions.generate.ApplicationThemeGenerator"
+                    class="com.yazantarifi.actions.generate.ApplicationThemeGenerator" text="Generate Activity Theme"
+                    description="Generate default activity theme in current project">
+                <add-to-group group-id="ViperGenerators" anchor="last"/>
             </action>
 
         </group>

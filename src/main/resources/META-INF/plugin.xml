@@ -55,6 +55,13 @@
                     description="Generate feature With activity, fragments, bundle extras">
                 <add-to-group group-id="ViperGenerators" anchor="first"/>
             </action>
+
+            <action id="com.yazantarifi.actions.generate.FragmentBundleGeneratorAction"
+                    class="com.yazantarifi.actions.generate.FragmentBundleGeneratorAction"
+                    text="Generate Fragment Instance With Bundle"
+                    description="Generate getInstance method for fragment With 3 parameters">
+                <add-to-group group-id="ViperGenerators" anchor="last"/>
+            </action>
         </group>
 
         <group text="Viper"

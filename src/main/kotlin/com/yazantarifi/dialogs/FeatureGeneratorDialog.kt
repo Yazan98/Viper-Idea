@@ -53,9 +53,9 @@ class FeatureGeneratorDialog constructor(
             add(isNavigationComponentSupported)
             add(isFragmentsGeneratedOnlyField)
             add(isFragmentListGeneratedField)
+            add(isHelperClassFieldEnabled)
             add(isMapGeneratedField)
             add(isMapAutoCompleteViewGeneratedField)
-            add(isHelperClassFieldEnabled)
         }
     }
 

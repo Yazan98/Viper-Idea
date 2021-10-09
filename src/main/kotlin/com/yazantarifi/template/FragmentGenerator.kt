@@ -52,7 +52,7 @@ object FragmentGenerator {
         }
     }
 
-    fun generateRecyclerViewFragment(packageFile: File, featureName: String, project: Project, name: String) {
+    fun generateRecyclerViewFragment(packageFile: File, featureName: String, project: Project, name: String, isViewModelGenerated: Boolean = false) {
         val packageName = ApplicationUtils.getPackageNameFromFile(packageFile, project)
         val projectPackageName = ApplicationUtils.getPackageName(project)
         FileWriter(File(packageFile, featureName + name + "Fragment.kt"), false).apply {
@@ -67,6 +67,7 @@ object FragmentGenerator {
             write("import androidx.fragment.app.Fragment\n")
             write("import androidx.recyclerview.widget.LinearLayoutManager\n")
             write("import androidx.recyclerview.widget.RecyclerView\n")
+            write("import androidx.fragment.app.activityViewModels\n")
             write("import ${projectPackageName}.R\n")
             write("import ${packageName}.adapters.${featureName + name}Adapter\n")
             write("\n")
@@ -76,6 +77,9 @@ object FragmentGenerator {
             ))
             write("class ${featureName + "${name}Fragment"}: Fragment() {\n")
             write("\n")
+            if (isViewModelGenerated) {
+                write("    private val viewModel: ${featureName}ViewModel by activityViewModels()\n")
+            }
             write("    companion object {\n")
             write("        @JvmStatic\n")
             write("        fun getInstance(args: Bundle? = null): ${featureName + "${name}Fragment"} {\n")
@@ -100,8 +104,28 @@ object FragmentGenerator {
             write("\n")
             write("    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {\n")
             write("        super.onViewCreated(view, savedInstanceState)\n")
+            if (isViewModelGenerated) {
+                write("        subscribeListeners()\n")
+            }
             write("    }\n")
             write("\n")
+            if (isViewModelGenerated) {
+                write("    private fun subscribeListeners() {\n")
+                write("        viewModel.loadingListener.observe(viewLifecycleOwner, {\n")
+                write("            when (it) {\n")
+                write("                true -> showLoading()\n")
+                write("                false -> hideLoading()\n")
+                write("            }\n")
+                write("        })\n")
+                write("\n")
+                write("        viewModel.dataListener.observe(viewLifecycleOwner, {\n")
+                write("            it?.let {\n")
+                write("                setupRecyclerView(null, it)\n")
+                write("            }\n")
+                write("        })\n")
+                write("    }\n")
+                write("\n")
+            }
             write("}\n")
             write("\n")
             flush()

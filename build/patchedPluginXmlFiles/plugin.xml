@@ -39,6 +39,9 @@
       <action id="com.yazantarifi.actions.generate.RecyclerViewMultipleViewHoldersAction" class="com.yazantarifi.actions.generate.RecyclerViewMultipleViewHoldersAction" text="Generate RecyclerView Adapter Multiple ViewHolders" description="Generate multiple views on recyclerView adapter">
         <add-to-group group-id="ViperGenerators" anchor="last"/>
       </action>
+      <action id="com.yazantarifi.actions.generate.FragmentsGeneratorAction" class="com.yazantarifi.actions.generate.FragmentsGeneratorAction" text="Generate Fragments" description="Generate multiple types of fragments inside selected package">
+        <add-to-group group-id="ViperGenerators" anchor="last"/>
+      </action>
     </group>
     <group text="Viper" id="ParentList" description="ADB scripts To connected devices" popup="true">
       <add-to-group group-id="MainMenu" anchor="last"/>

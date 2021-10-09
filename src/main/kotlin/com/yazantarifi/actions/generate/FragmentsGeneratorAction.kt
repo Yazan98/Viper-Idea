@@ -9,10 +9,8 @@ class FragmentsGeneratorAction: AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         e.project?.let { project ->
             FragmentsTypePickerDialog(project) {
-                it?.forEach {
 
-                }
-            }
+            }.showAndGet()
         }
     }
 

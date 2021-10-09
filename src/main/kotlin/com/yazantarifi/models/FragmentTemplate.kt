@@ -1,6 +1,9 @@
 package com.yazantarifi.models
 
-class FragmentTemplate {
+data class FragmentTemplate(
+    val featureName: String,
+    val results: ArrayList<String>
+) {
 
     companion object {
         const val MAPS_FRAGMENT = "maps"

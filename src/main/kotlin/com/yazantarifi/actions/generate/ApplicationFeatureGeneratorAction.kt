@@ -5,6 +5,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.project.Project
 import com.yazantarifi.models.FeatureInfo
 import com.yazantarifi.dialogs.FeatureGeneratorDialog
+import com.yazantarifi.template.MapsFragmentGenerator
 import com.yazantarifi.utils.ApplicationUtils
 import com.yazantarifi.utils.FilesUtil
 import java.io.File
@@ -32,7 +33,7 @@ class ApplicationFeatureGeneratorAction: AnAction() {
             }
 
             if (info.isMapGenerated) {
-                generateMapFragment(featurePackage, info.featureName, info.isMapAutoCompleteViewEnabled)
+                generateMapFragment(featurePackage, info.featureName, info.isMapAutoCompleteViewEnabled, project)
             }
 
             if (info.isViewModelGenerated) {
@@ -92,13 +93,13 @@ class ApplicationFeatureGeneratorAction: AnAction() {
         }
     }
 
-    private fun generateMapFragment(featurePackage: File, featureName: String, isMapAutoCompleteViewEnabled: Boolean) {
+    private fun generateMapFragment(featurePackage: File, featureName: String, isMapAutoCompleteViewEnabled: Boolean, project: Project) {
         val fragmentsPackage = File(featurePackage, "fragments")
         if (!fragmentsPackage.exists()) {
             fragmentsPackage.mkdir()
         }
 
-
+        MapsFragmentGenerator.generateMapsFragmentFile(fragmentsPackage, featureName, isMapAutoCompleteViewEnabled, project)
     }
 
     private fun generateFragmentClass(featurePackage: File, className: String, project: Project) {

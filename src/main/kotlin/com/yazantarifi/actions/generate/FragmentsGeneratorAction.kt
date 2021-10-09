@@ -27,12 +27,17 @@ class FragmentsGeneratorAction: AnAction() {
         FilesUtil.getVirtualFileByAction(event)?.let { file ->
             if (file.exists()) {
                 if (!ApplicationUtils.isEmpty(template.featureName)) {
-                    template.results?.forEach {
-                        when (it) {
-                            FragmentTemplate.EMPTY_FRAGMENT -> FragmentGenerator.generateEmptyFragment(File(file.path), template.featureName, project)
-                            FragmentTemplate.MAPS_FRAGMENT -> MapsFragmentGenerator.generateMapsFragmentFile(File(file.path), template.featureName, true, project)
-                            FragmentTemplate.RECYCLER_VIEW_FRAGMENT -> {}
-                            FragmentTemplate.TWO_RECYCLER_VIEWS_FRAGMENT -> {}
+                    template.results.forEach {
+                        if (!ApplicationUtils.isEmpty(it)) {
+                            when (it) {
+                                FragmentTemplate.EMPTY_FRAGMENT -> FragmentGenerator.generateEmptyFragment(File(file.path), template.featureName, project)
+                                FragmentTemplate.MAPS_FRAGMENT -> MapsFragmentGenerator.generateMapsFragmentFile(File(file.path), template.featureName, true, project)
+                                FragmentTemplate.RECYCLER_VIEW_FRAGMENT -> FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List")
+                                FragmentTemplate.TWO_RECYCLER_VIEWS_FRAGMENT -> {
+                                    FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List")
+                                    FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List2")
+                                }
+                            }
                         }
                     }
                 }

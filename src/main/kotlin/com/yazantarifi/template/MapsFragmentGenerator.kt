@@ -12,6 +12,9 @@ object MapsFragmentGenerator {
         FileWriter(File(featurePackage, featureName + "MapsFragment.kt"), false).apply {
             write("package $packageName")
             write("\n")
+            ApplicationUtils.addClassHeaderComment(this, arrayListOf(
+                "This Fragment is a Map Fragment Powered By Google Maps Implementation (V2)"
+            ))
             write("class ${featureName + "MapsFragment"}: Fragment() {\n")
             write("\n")
             write("}\n")

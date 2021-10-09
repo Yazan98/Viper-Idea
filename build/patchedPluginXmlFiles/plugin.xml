@@ -5,7 +5,7 @@
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
   <id>com.yazantarifi.Viper</id>
   <name>Viper</name>
-  <vendor email="yazantarifi1@hotmail.com" url="http://www.yazantarifi.com">Viper</vendor>
+  <vendor email="yazantarifi1@hotmail.com" url="https://www.yazantarifi.com">Viper</vendor>
   <description>
         Code Generation and Command Line Shell Scripts for Debugging Tools to Enable all of them In Android Studio and
         Common Used code in Android Apps Like Implementing Features in Android Studio
@@ -32,6 +32,12 @@
       </action>
       <action id="com.yazantarifi.actions.generate.ApplicationFeatureGeneratorAction" class="com.yazantarifi.actions.generate.ApplicationFeatureGeneratorAction" text="Generate Feature" description="Generate feature With activity, fragments, bundle extras">
         <add-to-group group-id="ViperGenerators" anchor="first"/>
+      </action>
+      <action id="com.yazantarifi.actions.generate.FragmentBundleGeneratorAction" class="com.yazantarifi.actions.generate.FragmentBundleGeneratorAction" text="Generate Fragment Instance With Bundle" description="Generate getInstance method for fragment With 3 parameters">
+        <add-to-group group-id="ViperGenerators" anchor="last"/>
+      </action>
+      <action id="com.yazantarifi.actions.generate.RecyclerViewMultipleViewHoldersAction" class="com.yazantarifi.actions.generate.RecyclerViewMultipleViewHoldersAction" text="Generate RecyclerView Adapter Multiple ViewHolders" description="Generate multiple views on recyclerView adapter">
+        <add-to-group group-id="ViperGenerators" anchor="last"/>
       </action>
     </group>
     <group text="Viper" id="ParentList" description="ADB scripts To connected devices" popup="true">

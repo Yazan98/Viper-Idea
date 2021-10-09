@@ -70,6 +70,12 @@
                 <add-to-group group-id="ViperGenerators" anchor="last"/>
 
             </action>
+
+            <action id="com.yazantarifi.actions.generate.FragmentsGeneratorAction"
+                    class="com.yazantarifi.actions.generate.FragmentsGeneratorAction" text="Generate Fragments"
+                    description="Generate multiple types of fragments inside selected package">
+                <add-to-group group-id="ViperGenerators" anchor="last"/>
+            </action>
         </group>
 
         <group text="Viper"

@@ -4,7 +4,7 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.project.Project
 import com.yazantarifi.models.FeatureInfo
-import com.yazantarifi.ui.FeatureGeneratorDialog
+import com.yazantarifi.dialogs.FeatureGeneratorDialog
 import com.yazantarifi.utils.ApplicationUtils
 import com.yazantarifi.utils.FilesUtil
 import java.io.File

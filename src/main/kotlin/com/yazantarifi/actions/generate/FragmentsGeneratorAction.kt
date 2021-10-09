@@ -2,13 +2,17 @@ package com.yazantarifi.actions.generate
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
-import com.yazantarifi.dialogs.FragmentBundleGeneratorDialog
+import com.yazantarifi.dialogs.FragmentsTypePickerDialog
 
-class FragmentBundleGeneratorAction: AnAction() {
+class FragmentsGeneratorAction: AnAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
         e.project?.let { project ->
-            FragmentBundleGeneratorDialog(project).showAndGet()
+            FragmentsTypePickerDialog(project) {
+                it?.forEach {
+
+                }
+            }
         }
     }
 

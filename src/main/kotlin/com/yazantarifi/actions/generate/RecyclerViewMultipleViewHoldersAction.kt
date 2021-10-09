@@ -4,7 +4,7 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
-import com.yazantarifi.ui.FeatureNameDialog
+import com.yazantarifi.dialogs.FeatureNameDialog
 import com.yazantarifi.utils.ApplicationUtils
 import com.yazantarifi.utils.FilesUtil
 import com.yazantarifi.utils.GradleManager
@@ -67,7 +67,9 @@ class RecyclerViewMultipleViewHoldersAction: AnAction() {
                     "RecyclerView Generated Code Adapter (Single Item View)",
                     "You Can Replace Item With Your Data Class Inside Your Application",
                     "And Your Click Callback To Your Data Class Inside Your Application",
-                    "This Class Will Hold All Items Inside Your List and Connect Them With ViewHolder"
+                    "This Class Will Hold All Items Inside Your List and Connect Them With ViewHolder",
+                    "Here This Type of Adapter Will Show Multiple ViewHolders Based on Their Order",
+                    "By Inflating Multiple Views Inside Each ViewHolder In onCreateViewHolder Method"
                 ))
                 writter.write("class ${featureName}Adapter constructor(\n")
                 writter.write("    private val items: ArrayList<Item>,\n")

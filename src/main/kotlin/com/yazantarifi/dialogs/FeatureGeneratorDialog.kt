@@ -21,22 +21,6 @@ class FeatureGeneratorDialog constructor(
     private val isFragmentsGeneratedOnlyField: JCheckBox by lazy { getCheckBoxInstance("Fragments Generation Only", false) }
     private val isFragmentListGeneratedField: JCheckBox by lazy { getCheckBoxInstance("Fragment RecyclerView Generation", false) }
     private val isHelperClassFieldEnabled: JCheckBox by lazy { getCheckBoxInstance("Feature Helper Class", false) }
-    private val isMapAutoCompleteViewGeneratedField: JCheckBox by lazy {
-        getCheckBoxInstance("Map Auto Complete View Generation").apply {
-            this.isVisible = false
-        }
-    }
-
-    private val isMapGeneratedField: JCheckBox by lazy {
-        getCheckBoxInstance("Map Generation", false).apply {
-            this.addChangeListener {
-                when (this.isSelected) {
-                    true -> isMapAutoCompleteViewGeneratedField.isVisible = true
-                    false -> isMapAutoCompleteViewGeneratedField.isVisible = false
-                }
-            }
-        }
-    }
 
     init {
         title = "Generate New Feature"
@@ -44,7 +28,7 @@ class FeatureGeneratorDialog constructor(
     }
 
     override fun createCenterPanel(): JComponent? {
-        return JPanel(GridLayout(13, 1)).apply {
+        return JPanel(GridLayout(10, 1)).apply {
             add(JLabel("Enter Package Name"))
             add(packageNameField)
             add(JLabel("Enter Feature Name"))
@@ -54,8 +38,6 @@ class FeatureGeneratorDialog constructor(
             add(isFragmentsGeneratedOnlyField)
             add(isFragmentListGeneratedField)
             add(isHelperClassFieldEnabled)
-            add(isMapGeneratedField)
-            add(isMapAutoCompleteViewGeneratedField)
         }
     }
 
@@ -74,13 +56,11 @@ class FeatureGeneratorDialog constructor(
         callback(FeatureInfo(
             packageNameField.text.toString().trim(),
             featureNameField.text.toString().trim(),
-            isMapGeneratedField.isSelected,
             isViewModelGeneratedField.isSelected,
             isNavigationComponentSupported.isSelected,
             !isNavigationComponentSupported.isSelected,
             isFragmentsGeneratedOnlyField.isSelected,
             isFragmentListGeneratedField.isSelected,
-            isMapAutoCompleteViewGeneratedField.isSelected,
             isHelperClassFieldEnabled.isSelected
         ))
     }

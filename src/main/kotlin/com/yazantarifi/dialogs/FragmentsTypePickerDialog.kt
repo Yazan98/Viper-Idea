@@ -18,7 +18,6 @@ class FragmentsTypePickerDialog constructor(
 
     private val notificationManager: IdeaNotificationsManager by lazy { IdeaNotificationsManager(project) }
     private val textPlaceHolder: JTextField by lazy { JTextField("") }
-    private val mapsCheckBox: JCheckBox by lazy { getCheckBoxInstance("Maps Fragment") }
     private val recyclerViewCheckBox: JCheckBox by lazy { getCheckBoxInstance("RecyclerView Fragment") }
     private val twoRecyclerViewCheckBox: JCheckBox by lazy { getCheckBoxInstance("2 RecyclerViews Fragment") }
     private val emptyCheckBox: JCheckBox by lazy { getCheckBoxInstance("Empty Fragment") }
@@ -34,9 +33,8 @@ class FragmentsTypePickerDialog constructor(
     }
 
     override fun createCenterPanel(): JComponent? {
-        return JPanel(GridLayout(6, 1)).apply {
+        return JPanel(GridLayout(4, 1)).apply {
             add(textPlaceHolder)
-            add(mapsCheckBox)
             add(recyclerViewCheckBox)
             add(twoRecyclerViewCheckBox)
             add(emptyCheckBox)
@@ -57,7 +55,6 @@ class FragmentsTypePickerDialog constructor(
         listener(FragmentTemplate(
             textPlaceHolder.text.toString().trim(),
             arrayListOf(
-                if (mapsCheckBox.isSelected) FragmentTemplate.MAPS_FRAGMENT else "",
                 if (recyclerViewCheckBox.isSelected) FragmentTemplate.RECYCLER_VIEW_FRAGMENT else "",
                 if (twoRecyclerViewCheckBox.isSelected) FragmentTemplate.TWO_RECYCLER_VIEWS_FRAGMENT else "",
                 if (emptyCheckBox.isSelected) FragmentTemplate.EMPTY_FRAGMENT else ""

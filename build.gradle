@@ -34,7 +34,8 @@ dependencies {
 intellij {
     version '2020.3.1'
     plugins 'android'
-    intellij.updateSinceUntilBuild false
+    updateSinceUntilBuild = false
+    sameSinceUntilBuild = true
 }
 
 runIde {
@@ -47,9 +48,29 @@ patchPluginXml {
       <em>most HTML tags may be used</em>"""
 }
 
+// Java target version
+sourceCompatibility = 1.8
+
+// Specify the right jvm target for Kotlin
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
+
+// Same for Kotlin tests
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+publishPlugin {
+    channels = ['beta']
 }

@@ -2,7 +2,7 @@
     <id>com.yazantarifi.Viper</id>
     <name>Viper</name>
     <vendor email="yazantarifi1@hotmail.com" url="https://www.yazantarifi.com">Viper</vendor>
-
+    <idea-version since-build="1.0.0" />
     <description>
         Code Generation and Command Line Shell Scripts for Debugging Tools to Enable all of them In Android Studio and
         Common Used code in Android Apps Like Implementing Features in Android Studio
@@ -110,11 +110,31 @@
                     <add-to-group group-id="Applications" anchor="last"/>
                 </action>
 
+                <action id="com.yazantarifi.actions.application.ClearDataApplicationAction"
+                        class="com.yazantarifi.actions.application.ClearDataApplicationAction" text="Clear Application Data"
+                        description="Clear application data for available package name">
+                    <add-to-group group-id="Applications" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.application.RemovePermissionsAction"
+                        class="com.yazantarifi.actions.application.RemovePermissionsAction" text="Remove All Permissions"
+                        description="Remove all permissions By revok The granted permissions">
+                    <add-to-group group-id="Applications" anchor="last"/>
+                </action>
+
+                <action id="com.yazantarifi.actions.application.ClearDataAndRestartAction"
+                        class="com.yazantarifi.actions.application.ClearDataAndRestartAction"
+                        text="Clear Application Data and Restart"
+                        description="Clear application data By available package name and restart The application on connected devices">
+                    <add-to-group group-id="Applications" anchor="last"/>
+                </action>
+
+
             </group>
 
             <group text="Debugging Tools"
-                   id="Viper.DebuggingTools"
-                   description="ADB scripts To connected devices"
+                   id="DebuggingTools"
+                   description="Debugging Toole"
                    popup="true">
 
                 <add-to-group group-id="ParentList" anchor="first"/>
@@ -122,85 +142,65 @@
                 <action id="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugEnableShowLayoutBoundsAction" text="Show Layout Bounds"
                         description="Enable developer options (show layout bounds) For connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugHideLayoutBoundsAction" text="Hide Layout Bounds"
                         description="Hide layout bounds (ADB shell command) in connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugShowOverdrawAreasAction"
                         text="Show Overdraw Areas (GPU Profiler)"
                         description="ADB shell command To enable overdraw areas in connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugHideOverdrawAreasAction" text="Hide Overdraw Areas"
                         description="ADB shell command To hide overdraw In connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugEnableKeepActivitiesAction"
                         text="Enable Don&#39;t Keep Activities Mode"
                         description="ADB shell command To enable don't keep activities in connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugDisableKeepActivitiesAction"
                         text="Disable Don&#39;t Keep Activities"
                         description="Disable don't keep activities Via shell command in connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugShowTapsAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugShowTapsAction" text="Show Taps (Touches)"
                         description="Show taps In connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugHideTapsAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugHideTapsAction" text="Hide Taps (Touches)"
                         description="Hide taps in connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugShowPointerLocationAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugShowPointerLocationAction" text="Show Pointer Location"
                         description="Show pointer location in connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
 
                 <action id="com.yazantarifi.actions.adb.AndroidDebugHidePointerLocationAction"
                         class="com.yazantarifi.actions.adb.AndroidDebugHidePointerLocationAction" text="Hide Pointer Location"
                         description="Hide pointer location in connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
-                </action>
-
-
-                <action id="com.yazantarifi.actions.application.ClearDataApplicationAction"
-                        class="com.yazantarifi.actions.application.ClearDataApplicationAction" text="Clear Application Data"
-                        description="Clear application data for available package name">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
-                </action>
-
-                <action id="com.yazantarifi.actions.application.RemovePermissionsAction"
-                        class="com.yazantarifi.actions.application.RemovePermissionsAction" text="Remove All Permissions"
-                        description="Remove all permissions By revok The granted permissions">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
-                </action>
-
-                <action id="com.yazantarifi.actions.application.ClearDataAndRestartAction"
-                        class="com.yazantarifi.actions.application.ClearDataAndRestartAction"
-                        text="Clear Application Data and Restart"
-                        description="Clear application data By available package name and restart The application on connected devices">
-                    <add-to-group group-id="Viper.DebuggingTools" anchor="last"/>
+                    <add-to-group group-id="DebuggingTools" anchor="last"/>
                 </action>
 
             </group>

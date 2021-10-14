@@ -1,5 +1,5 @@
 <idea-plugin>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1</version>
   <change-notes>
       Add change notes here.&lt;br&gt;
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
@@ -10,6 +10,14 @@
   <description>
         Code Generation and Command Line Shell Scripts for Debugging Tools to Enable all of them In Android Studio and
         Common Used code in Android Apps Like Implementing Features in Android Studio
+
+        This Plugin Has Most Common ADB Use Cases in Developer Options and Ready Code Generators to Build Better Applications
+        Installing The Plugin will Give You Viper Window Which is Responsible to Give You ADB commands
+        1. Developer Options
+        2. Package Commands
+
+        And From New Menu Select Viper and Will Give you The Available Options To Generate Android code
+        This Plugin only Supports Kotlin Syntax, Java Generated Code is Not Supported
     </description>
   <depends>com.intellij.modules.platform</depends>
   <depends>org.jetbrains.android</depends>

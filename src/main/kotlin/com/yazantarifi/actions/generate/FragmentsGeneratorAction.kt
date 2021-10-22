@@ -29,11 +29,11 @@ class FragmentsGeneratorAction: AnAction() {
                     template.results.forEach {
                         if (!ApplicationUtils.isEmpty(it)) {
                             when (it) {
-                                FragmentTemplate.EMPTY_FRAGMENT -> FragmentGenerator.generateEmptyFragment(File(file.path), template.featureName, project)
-                                FragmentTemplate.RECYCLER_VIEW_FRAGMENT -> FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List")
+                                FragmentTemplate.EMPTY_FRAGMENT -> FragmentGenerator.generateEmptyFragment(File(file.path), template.featureName, project, event)
+                                FragmentTemplate.RECYCLER_VIEW_FRAGMENT -> FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List", false, event)
                                 FragmentTemplate.TWO_RECYCLER_VIEWS_FRAGMENT -> {
-                                    FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List")
-                                    FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List2")
+                                    FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List", false, event)
+                                    FragmentGenerator.generateRecyclerViewFragment(File(file.path), template.featureName, project, "List2", false, event)
                                 }
                             }
                         }

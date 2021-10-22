@@ -33,17 +33,20 @@ class FirebaseNotificationsServiceGenerator: AnAction() {
     private fun executeNewFeatureEvent(project: Project, name: String, event: AnActionEvent) {
         FilesUtil.getVirtualFileByAction(event)?.let {
             if (it.exists()) {
-                generateFirebaseServiceFile(it, name, project)
+                generateFirebaseServiceFile(it, name, event)
                 it.refresh(false, false)
                 executeGradleDependency(project, event)
             }
         }
     }
 
-    private fun generateFirebaseServiceFile(targetFile: VirtualFile, name: String, project: Project) {
+    private fun generateFirebaseServiceFile(
+        targetFile: VirtualFile,
+        name: String,
+        event: AnActionEvent
+    ) {
         File(targetFile.path).apply {
-            val filePackageName = ApplicationUtils.getPackageNameFromFile(this, project)
-            val applicationPackage = ApplicationUtils.getPackageName(project)
+            val filePackageName = ApplicationUtils.getPackageNameFromFile(this, event)
             File(this, name + "FirebaseNotificationsService.kt").apply {
                 FileWriter(this, false).apply {
                     try {
@@ -61,8 +64,6 @@ class FirebaseNotificationsServiceGenerator: AnAction() {
                         this.write("import androidx.core.app.NotificationManagerCompat\n")
                         this.write("import com.google.firebase.messaging.FirebaseMessagingService\n")
                         this.write("import com.google.firebase.messaging.RemoteMessage\n")
-                        this.write("import ${applicationPackage}.R\n")
-                        this.write("import ${applicationPackage}.MainActivity\n")
                         this.write("import timber.log.Timber\n")
                         this.write("import java.util.*\n")
                         this.write("\n")

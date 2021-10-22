@@ -34,16 +34,20 @@ class WorkManagerDailyTaskGenerator: AnAction() {
     private fun executeNewFeatureEvent(project: Project, name: String, event: AnActionEvent) {
         FilesUtil.getVirtualFileByAction(event)?.let {
             if (it.exists()) {
-                generateWorkManagerFile(it, name, project)
+                generateWorkManagerFile(it, name, event)
                 it.refresh(false, true)
                 executeGradleDependency(project, event)
             }
         }
     }
 
-    private fun generateWorkManagerFile(targetFile: VirtualFile, name: String, project: Project) {
+    private fun generateWorkManagerFile(
+        targetFile: VirtualFile,
+        name: String,
+        event: AnActionEvent
+    ) {
         File(targetFile.path).apply {
-            val filePackageName = ApplicationUtils.getPackageNameFromFile(this, project)
+            val filePackageName = ApplicationUtils.getPackageNameFromFile(this, event)
             File(this, name + "WorkManager.kt").apply {
                 FileWriter(this, false).apply {
                     try {

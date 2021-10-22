@@ -29,27 +29,31 @@ class ApplicationFeatureGeneratorAction: AnAction() {
             }
 
             if (!info.isFragmentsGeneratedOnly) {
-                generateActivityClass(featurePackage, info.featureName, project, info.isScreenNavigationComponent)
+                generateActivityClass(featurePackage, info.featureName, info.isScreenNavigationComponent, event)
             }
 
             if (info.isViewModelGenerated) {
-                generateViewModelFile(featurePackage, info.featureName, project)
+                generateViewModelFile(featurePackage, info.featureName, event)
             }
 
             if (info.isHelperClassEnabled) {
-                generateHelperFile(featurePackage, info.featureName, project)
+                generateHelperFile(featurePackage, info.featureName, event)
             }
 
-            FragmentGenerator.generateRecyclerViewFragment(featurePackage, info.featureName, project, "First", info.isViewModelGenerated)
-            FragmentGenerator.generateRecyclerViewFragment(featurePackage, info.featureName, project, "Second", info.isViewModelGenerated)
-            FragmentGenerator.generateRecyclerViewFragment(featurePackage, info.featureName, project, "Final", info.isViewModelGenerated)
+            FragmentGenerator.generateRecyclerViewFragment(featurePackage, info.featureName, project, "First", info.isViewModelGenerated, event)
+            FragmentGenerator.generateRecyclerViewFragment(featurePackage, info.featureName, project, "Second", info.isViewModelGenerated, event)
+            FragmentGenerator.generateRecyclerViewFragment(featurePackage, info.featureName, project, "Final", info.isViewModelGenerated, event)
             it.refresh(false, true)
         }
 
     }
 
-    private fun generateHelperFile(featurePackage: File, featureName: String, project: Project) {
-        val packageName = ApplicationUtils.getPackageNameFromFile(featurePackage, project)
+    private fun generateHelperFile(
+        featurePackage: File,
+        featureName: String,
+        event: AnActionEvent
+    ) {
+        val packageName = ApplicationUtils.getPackageNameFromFile(featurePackage, event)
         FileWriter(File(featurePackage, featureName + "Helper.kt"), false).apply {
             write("package $packageName\n")
             write("\n")
@@ -62,7 +66,7 @@ class ApplicationFeatureGeneratorAction: AnAction() {
         }
     }
 
-    private fun generateViewModelFile(featurePackage: File, featureName: String, project: Project) {
+    private fun generateViewModelFile(featurePackage: File, featureName: String, project: AnActionEvent) {
         val packageName = ApplicationUtils.getPackageNameFromFile(featurePackage, project)
         FileWriter(File(featurePackage, featureName + "ViewModel.kt"), false).apply {
             try {
@@ -95,9 +99,13 @@ class ApplicationFeatureGeneratorAction: AnAction() {
         }
     }
 
-    private fun generateActivityClass(featurePackage: File, featureName: String, project: Project, isNavigationComponents: Boolean = false) {
-        val packageName = ApplicationUtils.getPackageNameFromFile(featurePackage, project)
-        val projectPackageName = ApplicationUtils.getPackageName(project)
+    private fun generateActivityClass(
+        featurePackage: File,
+        featureName: String,
+        isNavigationComponents: Boolean = false,
+        event: AnActionEvent
+    ) {
+        val packageName = ApplicationUtils.getPackageNameFromFile(featurePackage, event)
         FileWriter(File(featurePackage, featureName + "Screen.kt"), false).apply {
             try {
                 write("package $packageName\n")
@@ -106,7 +114,6 @@ class ApplicationFeatureGeneratorAction: AnAction() {
                 write("import android.os.Bundle\n")
                 write("import android.content.Context\n")
                 write("import android.content.Intent\n")
-                write("import ${projectPackageName}.R\n")
                 write("\n")
                 ApplicationUtils.addClassHeaderComment(this, arrayListOf(
                     "This is the Main Start Point inside this Feature (${featureName})",

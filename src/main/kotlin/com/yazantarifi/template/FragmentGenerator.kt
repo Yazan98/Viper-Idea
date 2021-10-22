@@ -1,5 +1,6 @@
 package com.yazantarifi.template
 
+import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.project.Project
 import com.yazantarifi.utils.ApplicationUtils
 import java.io.File
@@ -7,8 +8,8 @@ import java.io.FileWriter
 
 object FragmentGenerator {
 
-    fun generateEmptyFragment(packageFile: File, featureName: String, project: Project) {
-        val packageName = ApplicationUtils.getPackageNameFromFile(packageFile, project)
+    fun generateEmptyFragment(packageFile: File, featureName: String, project: Project, event: AnActionEvent) {
+        val packageName = ApplicationUtils.getPackageNameFromFile(packageFile, event)
         val projectPackageName = ApplicationUtils.getPackageName(project)
         FileWriter(File(packageFile, featureName + "EmptyFragment.kt"), false).apply {
             write("package $packageName")
@@ -52,8 +53,8 @@ object FragmentGenerator {
         }
     }
 
-    fun generateRecyclerViewFragment(packageFile: File, featureName: String, project: Project, name: String, isViewModelGenerated: Boolean = false) {
-        val packageName = ApplicationUtils.getPackageNameFromFile(packageFile, project)
+    fun generateRecyclerViewFragment(packageFile: File, featureName: String, project: Project, name: String, isViewModelGenerated: Boolean = false, event: AnActionEvent) {
+        val packageName = ApplicationUtils.getPackageNameFromFile(packageFile, event)
         val projectPackageName = ApplicationUtils.getPackageName(project)
         FileWriter(File(packageFile, featureName + name + "Fragment.kt"), false).apply {
             write("package $packageName")
@@ -142,12 +143,12 @@ object FragmentGenerator {
             holdersPackage.mkdir()
         }
 
-        generateAdapter(adaptersPackage, project, featureName, name)
-        generateViewHolder(holdersPackage, project, featureName, name)
+        generateAdapter(adaptersPackage, project, featureName, name, event)
+        generateViewHolder(holdersPackage, project, featureName, name, event)
     }
 
-    private fun generateAdapter(adapterFile: File, project: Project, featureName: String, name: String) {
-        val packageName = ApplicationUtils.getPackageNameFromFile(adapterFile, project)
+    private fun generateAdapter(adapterFile: File, project: Project, featureName: String, name: String, event: AnActionEvent) {
+        val packageName = ApplicationUtils.getPackageNameFromFile(adapterFile, event)
         File(adapterFile, featureName + name +"Adapter" + ".kt").apply {
             this.createNewFile()
             try {
@@ -191,8 +192,8 @@ object FragmentGenerator {
         }
     }
 
-    private fun generateViewHolder(parentFile: File, project: Project, featureName: String, name: String) {
-        val packageName = ApplicationUtils.getPackageNameFromFile(parentFile, project)
+    private fun generateViewHolder(parentFile: File, project: Project, featureName: String, name: String, event: AnActionEvent) {
+        val packageName = ApplicationUtils.getPackageNameFromFile(parentFile, event)
         File(parentFile, featureName  + name + "ViewHolder" + ".kt").apply {
             this.createNewFile()
             try {

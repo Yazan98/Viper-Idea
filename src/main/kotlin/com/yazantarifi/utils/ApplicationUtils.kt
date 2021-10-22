@@ -1,15 +1,18 @@
 package com.yazantarifi.utils
 
 import com.intellij.ide.highlighter.JavaFileType
-import com.intellij.psi.JavaPsiFacade
-import com.intellij.psi.PsiJavaFile
-import com.intellij.psi.PsiManager
-import com.intellij.psi.PsiPackage
+import com.intellij.openapi.actionSystem.AnActionEvent
+import com.intellij.openapi.actionSystem.LangDataKeys
+import com.intellij.openapi.project.Project
+import com.intellij.openapi.roots.ProjectFileIndex
+import com.intellij.psi.*
+import com.intellij.psi.impl.file.PsiPackageImpl
 import com.intellij.psi.search.FileTypeIndex
 import com.intellij.psi.search.GlobalSearchScope
 import com.intellij.util.indexing.FileBasedIndex
-
-import com.intellij.openapi.project.Project
+import org.jetbrains.kotlin.idea.core.getPackage
+import org.jetbrains.kotlin.psi.KtFile
+import java.awt.event.ActionEvent
 import java.io.File
 import java.io.FileWriter
 
@@ -53,10 +56,31 @@ object ApplicationUtils {
     }
 
     @JvmStatic
-    fun getPackageNameFromFile(targetFile: File, project: Project): String {
-        val projectPackageName = getPackageName(project)
-        val packageNameSplitter = targetFile.path.replace("/", ".").split(projectPackageName)
-        return if (packageNameSplitter.size > 1) projectPackageName + packageNameSplitter[1] else projectPackageName
+    fun getPackageNameFromFile(file: File, e: AnActionEvent): String {
+        val packageName = ((e.getData(LangDataKeys.PSI_ELEMENT) as PsiDirectory).getPackage() as PsiPackageImpl).qualifiedName
+        return try {
+            var filteredPackageName = ""
+            for (item in 1..20) {
+                if (isEmpty(filteredPackageName)) {
+                    filteredPackageName = packageName
+                }
+
+                if (filteredPackageName.contains(".")) {
+                    filteredPackageName = filteredPackageName.replace(".", "/")
+                } else {
+                    break
+                }
+            }
+
+            val segments = file.absolutePath.split(filteredPackageName)
+            if (segments.size > 1) {
+                packageName + segments[1].replace("/", ".")
+            } else {
+                packageName
+            }
+        } catch(ex: Exception) {
+            packageName
+        }
     }
 
     @JvmStatic

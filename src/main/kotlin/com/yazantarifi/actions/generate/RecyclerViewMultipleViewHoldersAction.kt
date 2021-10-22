@@ -35,19 +35,23 @@ class RecyclerViewMultipleViewHoldersAction: AnAction() {
         FilesUtil.getVirtualFileByAction(event)?.let {
             if (it.exists()) {
                 validateFilesStructure(it)
-                generateViewHolderFile(it, featureName, project, "First")
-                generateViewHolderFile(it, featureName, project, "Second")
-                generateViewHolderFile(it, featureName, project, "Final")
-                generateAdapterFile(it, featureName, project)
+                generateViewHolderFile(it, featureName, "First", event)
+                generateViewHolderFile(it, featureName, "Second", event)
+                generateViewHolderFile(it, featureName, "Final", event)
+                generateAdapterFile(it, featureName, event)
                 it.refresh(false, true)
                 executeGradleDependency(project, event)
             }
         }
     }
 
-    private fun generateAdapterFile(targetFile: VirtualFile, featureName: String, project: Project) {
+    private fun generateAdapterFile(
+        targetFile: VirtualFile,
+        featureName: String,
+        event: AnActionEvent
+    ) {
         val adapterFile = File(targetFile.path, ADAPTERS_FILE)
-        val packageName = ApplicationUtils.getPackageNameFromFile(adapterFile, project)
+        val packageName = ApplicationUtils.getPackageNameFromFile(adapterFile, event)
         File(adapterFile, featureName + "Adapter" + ".kt").apply {
             this.createNewFile()
             try {
@@ -61,7 +65,6 @@ class RecyclerViewMultipleViewHoldersAction: AnAction() {
                 writter.write("import ${packageName}.holders.${featureName}ViewHolderFirst\n")
                 writter.write("import ${packageName}.holders.${featureName}ViewHolderSecond\n")
                 writter.write("import ${packageName}.holders.${featureName}ViewHolderFinal\n")
-                writter.write("import ${ApplicationUtils.getPackageName(project)}.R\n")
                 writter.write("\n")
                 ApplicationUtils.addClassHeaderComment(writter, arrayListOf(
                     "RecyclerView Generated Code Adapter (Single Item View)",
@@ -114,13 +117,18 @@ class RecyclerViewMultipleViewHoldersAction: AnAction() {
         }
     }
 
-    private fun generateViewHolderFile(targetFile: VirtualFile, featureName: String, project: Project, order: String) {
+    private fun generateViewHolderFile(
+        targetFile: VirtualFile,
+        featureName: String,
+        order: String,
+        event: AnActionEvent
+    ) {
         val adaptersFile = File(targetFile.path, "adapters")
         if (!adaptersFile.exists()) {
             adaptersFile.mkdir()
         }
         val viewHolderFile = File(adaptersFile, HOLDERS_FILE)
-        val packageName = ApplicationUtils.getPackageNameFromFile(viewHolderFile, project)
+        val packageName = ApplicationUtils.getPackageNameFromFile(adaptersFile, event)
         File(viewHolderFile, featureName + "ViewHolder" + order + ".kt").apply {
             this.createNewFile()
             try {
@@ -130,7 +138,6 @@ class RecyclerViewMultipleViewHoldersAction: AnAction() {
                 writter.write("\n")
                 writter.write("import android.view.View\n")
                 writter.write("import androidx.recyclerview.widget.RecyclerView\n")
-                writter.write("import ${ApplicationUtils.getPackageName(project)}.R\n")
                 writter.write("\n")
                 writter.write("\n")
                 ApplicationUtils.addClassHeaderComment(writter, arrayListOf(

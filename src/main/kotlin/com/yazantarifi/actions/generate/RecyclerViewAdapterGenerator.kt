@@ -36,16 +36,16 @@ class RecyclerViewAdapterGenerator: AnAction() {
         FilesUtil.getVirtualFileByAction(event)?.let {
             if (it.exists()) {
                 validateFilesStructure(it)
-                generateViewHolderFile(it, featureName, project)
-                generateAdapterFile(it, featureName, project)
-                generateClickListenerFile(it, featureName, project)
+                generateViewHolderFile(it, featureName, event)
+                generateAdapterFile(it, featureName, event)
+                generateClickListenerFile(it, featureName, event)
                 it.refresh(false, true)
                 executeGradleDependency(project, event)
             }
         }
     }
 
-    private fun generateClickListenerFile(targetFile: VirtualFile, featureName: String, project: Project) {
+    private fun generateClickListenerFile(targetFile: VirtualFile, featureName: String, project: AnActionEvent) {
         val adaptersFile = File(targetFile.path, "adapters")
         if (!adaptersFile.exists()) {
             adaptersFile.mkdir()
@@ -78,9 +78,13 @@ class RecyclerViewAdapterGenerator: AnAction() {
         }
     }
 
-    private fun generateAdapterFile(targetFile: VirtualFile, featureName: String, project: Project) {
+    private fun generateAdapterFile(
+        targetFile: VirtualFile,
+        featureName: String,
+        event: AnActionEvent
+    ) {
         val adapterFile = File(targetFile.path, ADAPTERS_FILE)
-        val packageName = ApplicationUtils.getPackageNameFromFile(adapterFile, project)
+        val packageName = ApplicationUtils.getPackageNameFromFile(adapterFile, event)
         File(adapterFile, featureName + "Adapter" + ".kt").apply {
             this.createNewFile()
             try {
@@ -93,7 +97,6 @@ class RecyclerViewAdapterGenerator: AnAction() {
                 writter.write("import androidx.recyclerview.widget.RecyclerView\n")
                 writter.write("import ${packageName}.holders.${featureName}ViewHolder\n")
                 writter.write("import ${packageName}.listeners.${featureName}ClickListener\n")
-                writter.write("import ${ApplicationUtils.getPackageName(project)}.R\n")
                 writter.write("\n")
                 ApplicationUtils.addClassHeaderComment(writter, arrayListOf(
                     "RecyclerView Generated Code Adapter (Single Item View)",
@@ -129,13 +132,17 @@ class RecyclerViewAdapterGenerator: AnAction() {
         }
     }
 
-    private fun generateViewHolderFile(targetFile: VirtualFile, featureName: String, project: Project) {
+    private fun generateViewHolderFile(
+        targetFile: VirtualFile,
+        featureName: String,
+        event: AnActionEvent
+    ) {
         val adaptersFile = File(targetFile.path, "adapters")
         if (!adaptersFile.exists()) {
             adaptersFile.mkdir()
         }
         val viewHolderFile = File(adaptersFile, HOLDERS_FILE)
-        val packageName = ApplicationUtils.getPackageNameFromFile(viewHolderFile, project)
+        val packageName = ApplicationUtils.getPackageNameFromFile(viewHolderFile, event)
         File(viewHolderFile, featureName + "ViewHolder" + ".kt").apply {
             this.createNewFile()
             try {
@@ -145,7 +152,6 @@ class RecyclerViewAdapterGenerator: AnAction() {
                 writter.write("\n")
                 writter.write("import android.view.View\n")
                 writter.write("import androidx.recyclerview.widget.RecyclerView\n")
-                writter.write("import ${ApplicationUtils.getPackageName(project)}.R\n")
                 writter.write("\n")
                 writter.write("\n")
                 ApplicationUtils.addClassHeaderComment(writter, arrayListOf(

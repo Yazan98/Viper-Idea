@@ -46,6 +46,6 @@ Android Studio Plugin to Generate Kotlin Classes and Execute Some ADB Commands t
 
 ## License
 
-Copyright (C) 2019 Viper-Idea is An Open Source Library (Licensed under the Apache License, Version 2.0)
+Copyright (C) 2021 Viper-Idea is An Open Source Library (Licensed under the Apache License, Version 2.0)
 
 

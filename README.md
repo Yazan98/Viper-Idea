@@ -1,4 +1,4 @@
-# Viper
+# Viper-Idea
 Android Studio Plugin To Execute Common Android Development Cases (Code Generation, ADB Events)
 
 <p align="center">
@@ -26,6 +26,26 @@ Android Studio Plugin to Generate Kotlin Classes and Execute Some ADB Commands t
 16. Generate RecyclerView Adapter Multi ViewHolders
 17. Generate Daily Work Manager Task
 
+## Plugin Info
+1. Supported Android Studio Version : 2020.3.1
+2. Plugin Version : 1.0.2
+
 ## Download
 1. [Jetbrains Plugin](https://plugins.jetbrains.com/plugin/17787-viper)
-2. [Jar File](https://plugins.jetbrains.com/plugin/17787-viper)
+2. [Jar File](https://github.com/Yazan98/Viper/tree/main/builds)
+
+## Screenshots
+
+![](https://github.com/Yazan98/Viper/blob/main/images/1.png?raw=true)
+
+![](https://github.com/Yazan98/Viper/blob/main/images/2.png?raw=true)
+
+![](https://github.com/Yazan98/Viper/blob/main/images/3.png?raw=true)
+
+![](https://github.com/Yazan98/Viper/blob/main/images/4.png?raw=true)
+
+## License
+
+Copyright (C) 2019 Viper-Idea is An Open Source Library (Licensed under the Apache License, Version 2.0)
+
+
